@@ -1,0 +1,1123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.github.freya022.botcommands.api.core.utils</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.core.utils////PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../index.html">BotCommands-core</a><span class="delimiter">/</span><span class="current">io.github.freya022.botcommands.api.core.utils</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="444048750%2FClasslikes%2F1100755421" anchor-label="DefaultObjectMapper" id="444048750%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-object-mapper/index.html"><span>Default</span><wbr><span>Object</span><wbr><span><span>Mapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="444048750%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-default-object-mapper/index.html">DefaultObjectMapper</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="803060110%2FClasslikes%2F1100755421" anchor-label="MetaAnnotatedClass" id="803060110%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-meta-annotated-class/index.html"><span>Meta</span><wbr><span>Annotated</span><wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="803060110%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-meta-annotated-class/index.html">MetaAnnotatedClass</a><span class="token operator">&lt;</span><a href="-meta-annotated-class/index.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2102099977%2FClasslikes%2F1100755421" anchor-label="ReflectionUtils" id="2102099977%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-reflection-utils/index.html"><span>Reflection</span><wbr><span><span>Utils</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2102099977%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-reflection-utils/index.html">ReflectionUtils</a></div><div class="brief "><p class="paragraph">Utility class to convert between Kotlin and Java reflection objects.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-390910900%2FProperties%2F1100755421" anchor-label="allSuperclasses" id="-390910900%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="all-superclasses.html"><span>all</span><wbr><span><span>Superclasses</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-390910900%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="all-superclasses.html">allSuperclasses</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="978334609%2FProperties%2F1100755421" anchor-label="allSuperclassesAndInterfaces" id="978334609%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="all-superclasses-and-interfaces.html"><span>all</span><wbr><span>Superclasses</span><wbr><span>And</span><wbr><span><span>Interfaces</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978334609%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="all-superclasses-and-interfaces.html">allSuperclassesAndInterfaces</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1374379269%2FProperties%2F1100755421" anchor-label="bestName" id="-1374379269%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="best-name.html"><span>best</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1374379269%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-parameter/index.html">KParameter</a><span class="token punctuation">.</span><a href="best-name.html">bestName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1028380967%2FProperties%2F1100755421" anchor-label="isConstructor" id="1028380967%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-constructor.html"><span>is</span><wbr><span><span>Constructor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1028380967%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-constructor.html">isConstructor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-856298169%2FProperties%2F1100755421" anchor-label="isPrimitive" id="-856298169%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-primitive.html"><span>is</span><wbr><span><span>Primitive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-856298169%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-parameter/index.html">KParameter</a><span class="token punctuation">.</span><a href="is-primitive.html">isPrimitive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="896543409%2FProperties%2F1100755421" anchor-label="isStatic" id="896543409%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-static.html"><span>is</span><wbr><span><span>Static</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="896543409%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-static.html">isStatic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-644600533%2FProperties%2F1100755421" anchor-label="javaMethodOrConstructor" id="-644600533%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="java-method-or-constructor.html"><span>java</span><wbr><span>Method</span><wbr><span>Or</span><wbr><span><span>Constructor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-644600533%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="java-method-or-constructor.html">javaMethodOrConstructor</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Executable.html">Executable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1023336469%2FProperties%2F1100755421" anchor-label="javaMethodOrConstructorOrNull" id="1023336469%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="java-method-or-constructor-or-null.html"><span>java</span><wbr><span>Method</span><wbr><span>Or</span><wbr><span>Constructor</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1023336469%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="java-method-or-constructor-or-null.html">javaMethodOrConstructorOrNull</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/reflect/Executable.html">Executable</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="7969111%2FProperties%2F1100755421" anchor-label="qualifiedNestedName" id="7969111%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="qualified-nested-name.html"><span>qualified</span><wbr><span>Nested</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="7969111%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-type/index.html">KType</a><span class="token punctuation">.</span><a href="qualified-nested-name.html">qualifiedNestedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="918048933%2FProperties%2F1100755421" anchor-label="shortQualifiedName" id="918048933%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="short-qualified-name.html"><span>short</span><wbr><span>Qualified</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="918048933%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><span data-unresolved-link="io.github.classgraph/ClassInfo///PointingToDeclaration/">ClassInfo</span><span class="token punctuation">.</span><a href="short-qualified-name.html">shortQualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="short-qualified-name.html">shortQualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="short-qualified-name.html">shortQualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-type/index.html">KType</a><span class="token punctuation">.</span><a href="short-qualified-name.html">shortQualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1712909968%2FProperties%2F1100755421" anchor-label="shortSignature" id="-1712909968%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="short-signature.html"><span>short</span><wbr><span><span>Signature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1712909968%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><span data-unresolved-link="io.github.classgraph/MethodInfo///PointingToDeclaration/">MethodInfo</span><span class="token punctuation">.</span><a href="short-signature.html">shortSignature</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="637217721%2FProperties%2F1100755421" anchor-label="shortSignatureNoSrc" id="637217721%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="short-signature-no-src.html"><span>short</span><wbr><span>Signature</span><wbr><span>No</span><wbr><span><span>Src</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="637217721%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><span data-unresolved-link="io.github.classgraph/MethodInfo///PointingToDeclaration/">MethodInfo</span><span class="token punctuation">.</span><a href="short-signature-no-src.html">shortSignatureNoSrc</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1569546815%2FProperties%2F1100755421" anchor-label="simpleNestedName" id="-1569546815%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="simple-nested-name.html"><span>simple</span><wbr><span>Nested</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1569546815%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><span data-unresolved-link="io.github.classgraph/ClassInfo///PointingToDeclaration/">ClassInfo</span><span class="token punctuation">.</span><a href="simple-nested-name.html">simpleNestedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="simple-nested-name.html">simpleNestedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="simple-nested-name.html">simpleNestedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="symbol monospace"><span class="token keyword">val </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-type/index.html">KType</a><span class="token punctuation">.</span><a href="simple-nested-name.html">simpleNestedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-874534085%2FFunctions%2F1100755421" anchor-label="arrayOfSize" id="-874534085%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="array-of-size.html"><span>array</span><wbr><span>Of</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-874534085%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="array-of-size.html">T</a><span class="token operator">&gt; </span><a href="array-of-size.html"><span class="token function">arrayOfSize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayList.html">ArrayList</a><span class="token operator">&lt;</span><a href="array-of-size.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="853557254%2FFunctions%2F1100755421" anchor-label="asUnicodeEmoji" id="853557254%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="as-unicode-emoji.html"><span>as</span><wbr><span>Unicode</span><wbr><span><span>Emoji</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="853557254%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="net.fellbaum.jemoji/Emoji///PointingToDeclaration/">Emoji</span><span class="token punctuation">.</span><a href="as-unicode-emoji.html"><span class="token function">asUnicodeEmoji</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a></div><div class="brief "><p class="paragraph">Converts this JEmoji <span data-unresolved-link="net.fellbaum.jemoji/Emoji///PointingToDeclaration/">Emoji</span> into a JDA <a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1654848714%2FFunctions%2F1100755421" anchor-label="await" id="-1654848714%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await.html"><span><span>await</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1654848714%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="await.html">T</a><span class="token operator"> : </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/GenericEvent.html">GenericEvent</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a><span class="token punctuation">.</span><a href="await.html"><span class="token function">await</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">crossinline </span>filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="await.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>{ true }</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="await.html">T</a></div><div class="brief "><p class="paragraph">Suspends until an event of type <a href="await.html">T</a> satisfying the <a href="await.html">filter</a> is received on this shard, then returns it.</p></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="await.html">T</a><span class="token operator"> : </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/GenericEvent.html">GenericEvent</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/ShardManager.html">ShardManager</a><span class="token punctuation">.</span><a href="await.html"><span class="token function">await</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">crossinline </span>filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="await.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>{ true }</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="await.html">T</a></div><div class="brief "><p class="paragraph">Suspends until an event of type <a href="await.html">T</a> satisfying the <a href="await.html">filter</a> is received on any shard, then returns it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-256976838%2FFunctions%2F1100755421" anchor-label="computeIfAbsentOrNull" id="-256976838%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="compute-if-absent-or-null.html"><span>compute</span><wbr><span>If</span><wbr><span>Absent</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-256976838%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="compute-if-absent-or-null.html">K</a><span class="token punctuation">, </span><a href="compute-if-absent-or-null.html">V</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="compute-if-absent-or-null.html">K</a><span class="token punctuation">, </span><a href="compute-if-absent-or-null.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="compute-if-absent-or-null.html"><span class="token function">computeIfAbsentOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="compute-if-absent-or-null.html">K</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="compute-if-absent-or-null.html">K</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="compute-if-absent-or-null.html">V</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="compute-if-absent-or-null.html">V</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">null</code> if the element already exists</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1436069668%2FFunctions%2F1100755421" anchor-label="containsAny" id="-1436069668%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-any.html"><span>contains</span><wbr><span><span>Any</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1436069668%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="contains-any.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="contains-any.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="contains-any.html"><span class="token function">containsAny</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">elements<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="contains-any.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="contains-any.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="contains-any.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="contains-any.html"><span class="token function">containsAny</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>elements<span class="token operator">: </span><a href="contains-any.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-947094628%2FFunctions%2F1100755421" anchor-label="enumMapOf" id="-947094628%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enum-map-of.html"><span>enum</span><wbr><span>Map</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-947094628%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="enum-map-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="enum-map-of.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="enum-map-of.html">V</a><span class="token operator">&gt; </span><a href="enum-map-of.html"><span class="token function">enumMapOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumMap.html">EnumMap</a><span class="token operator">&lt;</span><a href="enum-map-of.html">T</a><span class="token punctuation">, </span><a href="enum-map-of.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-966840644%2FFunctions%2F1100755421" anchor-label="enumSetOf" id="-966840644%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enum-set-of.html"><span>enum</span><wbr><span>Set</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-966840644%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="enum-set-of.html"><span class="token function">enumSetOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="enum-set-of.html"><span class="token function">enumSetOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>elems<span class="token operator">: </span><a href="enum-set-of.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="enum-set-of.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1809033821%2FFunctions%2F1100755421" anchor-label="enumSetOfAll" id="-1809033821%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enum-set-of-all.html"><span>enum</span><wbr><span>Set</span><wbr><span>Of</span><wbr><span><span>All</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1809033821%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="enum-set-of-all.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="enum-set-of-all.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="enum-set-of-all.html"><span class="token function">enumSetOfAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="enum-set-of-all.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="446889784%2FFunctions%2F1100755421" anchor-label="findAllAnnotations" id="446889784%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-all-annotations.html"><span>find</span><wbr><span>All</span><wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="446889784%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="find-all-annotations.html"><span class="token function">findAllAnnotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">, </span></span><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">directOverrides<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations of type <a href="find-all-annotations.html">A</a> from the annotated <a href="find-all-annotations.html">element</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-715503338%2FFunctions%2F1100755421" anchor-label="findAllAnnotations" id="-715503338%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-all-annotations.html"><span>find</span><wbr><span>All</span><wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-715503338%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-all-annotations.html"><span class="token function">findAllAnnotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">directOverrides<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-all-annotations.html"><span class="token function">findAllAnnotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">directOverrides<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="find-all-annotations.html">A</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations of type <a href="find-all-annotations.html">A</a> from the annotated element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="786466098%2FFunctions%2F1100755421" anchor-label="findAllAnnotationsWith" id="786466098%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-all-annotations-with.html"><span>find</span><wbr><span>All</span><wbr><span>Annotations</span><wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="786466098%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="find-all-annotations-with.html"><span class="token function">findAllAnnotationsWith</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">, </span></span><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-meta-annotated-class/index.html">MetaAnnotatedClass</a><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations meta-annotated with <a href="find-all-annotations-with.html">A</a> from the annotated <a href="find-all-annotations-with.html">element</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-567391651%2FFunctions%2F1100755421" anchor-label="findAllAnnotationsWith" id="-567391651%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-all-annotations-with.html"><span>find</span><wbr><span>All</span><wbr><span>Annotations</span><wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-567391651%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-all-annotations-with.html"><span class="token function">findAllAnnotationsWith</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-meta-annotated-class/index.html">MetaAnnotatedClass</a><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-all-annotations-with.html"><span class="token function">findAllAnnotationsWith</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-meta-annotated-class/index.html">MetaAnnotatedClass</a><span class="token operator">&lt;</span><a href="find-all-annotations-with.html">A</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations meta-annotated with <a href="find-all-annotations-with.html">A</a> from the annotated element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1157597960%2FFunctions%2F1100755421" anchor-label="findAnnotationRecursive" id="-1157597960%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-annotation-recursive.html"><span>find</span><wbr><span>Annotation</span><wbr><span><span>Recursive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1157597960%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-annotation-recursive.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="find-annotation-recursive.html"><span class="token function">findAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">, </span></span><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="find-annotation-recursive.html">A</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="find-annotation-recursive.html">A</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Finds a single annotation of type <a href="find-annotation-recursive.html">A</a> from the annotated <a href="find-annotation-recursive.html">element</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1143294111%2FFunctions%2F1100755421" anchor-label="findAnnotationRecursive" id="1143294111%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-annotation-recursive.html"><span>find</span><wbr><span>Annotation</span><wbr><span><span>Recursive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1143294111%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-annotation-recursive.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-annotation-recursive.html"><span class="token function">findAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="find-annotation-recursive.html">A</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="find-annotation-recursive.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="find-annotation-recursive.html"><span class="token function">findAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="find-annotation-recursive.html">A</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="find-annotation-recursive.html">A</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Finds a single annotation of type <a href="find-annotation-recursive.html">A</a> from the annotated element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1041354385%2FFunctions%2F1100755421" anchor-label="flatMap" id="-1041354385%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="flat-map.html"><span>flat</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1041354385%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="flat-map.html">T</a><span class="token punctuation">, </span><a href="flat-map.html">R</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="flat-map.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="flat-map.html"><span class="token function">flatMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="flat-map.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="flat-map.html">R</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="flat-map.html">R</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1773547597%2FFunctions%2F1100755421" anchor-label="flatMapTo" id="-1773547597%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="flat-map-to.html"><span>flat</span><wbr><span>Map</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1773547597%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="flat-map-to.html">T</a><span class="token punctuation">, </span><a href="flat-map-to.html">R</a><span class="token punctuation">, </span><a href="flat-map-to.html">C</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><span class="token keyword">in </span><a href="flat-map-to.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="flat-map-to.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="flat-map-to.html"><span class="token function">flatMapTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">destination<span class="token operator">: </span><a href="flat-map-to.html">C</a><span class="token punctuation">, </span></span><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="flat-map-to.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="flat-map-to.html">R</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="flat-map-to.html">C</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-263487644%2FFunctions%2F1100755421" anchor-label="getAllAnnotations" id="-263487644%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-annotations.html"><span>get</span><wbr><span>All</span><wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-263487644%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-all-annotations.html"><span class="token function">getAllAnnotations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations from the annotated <a href="get-all-annotations.html">element</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1694756774%2FFunctions%2F1100755421" anchor-label="getAllAnnotations" id="1694756774%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-annotations.html"><span>get</span><wbr><span>All</span><wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1694756774%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"getAllAnnotationsKotlin"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="get-all-annotations.html"><span class="token function">getAllAnnotations</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all annotations from the annotated element.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-576227418%2FFunctions%2F1100755421" anchor-label="getMissingPermissions" id="-576227418%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-missing-permissions.html"><span>get</span><wbr><span>Missing</span><wbr><span><span>Permissions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-576227418%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-missing-permissions.html"><span class="token function">getMissingPermissions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">requiredPerms<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/Permission.html">Permission</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">permissionHolder<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/IPermissionHolder.html">IPermissionHolder</a><span class="token punctuation">, </span></span><span class="parameter ">channel<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/middleman/GuildChannel.html">GuildChannel</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/Permission.html">Permission</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Computes the missing permissions from the specified permission holder, if you plan on showing them, be sure to use <a href="../io.github.freya022.botcommands.api.localization/-permission-localization/localize.html">PermissionLocalization.localize</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1430090819%2FFunctions%2F1100755421" anchor-label="getParameters" id="1430090819%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-parameters.html"><span>get</span><wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1430090819%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="get-parameters.html"><span class="token function">getParameters</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parameterNames<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">qualifiedTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="453049349%2FFunctions%2F1100755421" anchor-label="getSignature" id="453049349%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-signature.html"><span>get</span><wbr><span><span>Signature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="453049349%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-function/index.html">KFunction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="get-signature.html"><span class="token function">getSignature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parameterNames<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf()<span class="token punctuation">, </span></span><span class="parameter ">qualifiedClass<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">qualifiedTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">returnType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">source<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1279025845%2FFunctions%2F1100755421" anchor-label="hasAnnotationRecursive" id="1279025845%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-annotation-recursive.html"><span>has</span><wbr><span>Annotation</span><wbr><span><span>Recursive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1279025845%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-annotation-recursive.html"><span class="token function">hasAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">, </span></span><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this <a href="has-annotation-recursive.html">element</a> is annotated with <a href="has-annotation-recursive.html">annotationType</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1834645877%2FFunctions%2F1100755421" anchor-label="hasAnnotationRecursive" id="-1834645877%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-annotation-recursive.html"><span>has</span><wbr><span>Annotation</span><wbr><span><span>Recursive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1834645877%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-annotation-recursive.html">A</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="has-annotation-recursive.html"><span class="token function">hasAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this element is annotated with <a href="has-annotation-recursive.html">A</a>.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-annotated-element/index.html">KAnnotatedElement</a><span class="token punctuation">.</span><a href="has-annotation-recursive.html"><span class="token function">hasAnnotationRecursive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">annotationType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-annotation/index.html">Annotation</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">true</code> if this element is annotated with <a href="has-annotation-recursive.html">annotationType</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2025401835%2FFunctions%2F1100755421" anchor-label="isAssignableFrom" id="2025401835%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-assignable-from.html"><span>is</span><wbr><span>Assignable</span><wbr><span><span>From</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2025401835%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-assignable-from.html"><span class="token function">isAssignableFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-assignable-from.html"><span class="token function">isAssignableFrom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">kClass<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1342666738%2FFunctions%2F1100755421" anchor-label="isSubclassOf" id="-1342666738%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-subclass-of.html"><span>is</span><wbr><span>Subclass</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1342666738%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="is-subclass-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of.html"><span class="token function">isSubclassOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="is-subclass-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of.html"><span class="token function">isSubclassOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of.html"><span class="token function">isSubclassOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">kClass<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-424144240%2FFunctions%2F1100755421" anchor-label="isSubclassOfAny" id="-424144240%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-subclass-of-any.html"><span>is</span><wbr><span>Subclass</span><wbr><span>Of</span><wbr><span><span>Any</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-424144240%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of-any.html"><span class="token function">isSubclassOfAny</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">classes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-subclass-of-any.html"><span class="token function">isSubclassOfAny</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>classes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1405404623%2FFunctions%2F1100755421" anchor-label="isSuperclassOf" id="-1405404623%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-superclass-of.html"><span>is</span><wbr><span>Superclass</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1405404623%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="is-superclass-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="is-superclass-of.html"><span class="token function">isSuperclassOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1300020326%2FFunctions%2F1100755421" anchor-label="joinAsList" id="-1300020326%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-as-list.html"><span>join</span><wbr><span>As</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1300020326%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="join-as-list.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="join-as-list.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="join-as-list.html"><span class="token function">joinAsList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">linePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">" -"</span><span class="token punctuation">, </span></span><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="join-as-list.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1616457393%2FFunctions%2F1100755421" anchor-label="joinWithQuote" id="-1616457393%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="join-with-quote.html"><span>join</span><wbr><span>With</span><wbr><span><span>Quote</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1616457393%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="join-with-quote.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="join-with-quote.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="join-with-quote.html"><span class="token function">joinWithQuote</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="join-with-quote.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="544941769%2FFunctions%2F1100755421" anchor-label="lazyUnicodeEmoji" id="544941769%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lazy-unicode-emoji.html"><span>lazy</span><wbr><span>Unicode</span><wbr><span><span>Emoji</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="544941769%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"lazyJdaUnicodeEmoji"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="lazy-unicode-emoji.html"><span class="token function">lazyUnicodeEmoji</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">supplier<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Lazily converts the supplied <a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/Emoji.html">Emoji</a> into a JDA <a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a>.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"lazyJEmojiUnicodeEmoji"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="lazy-unicode-emoji.html"><span class="token function">lazyUnicodeEmoji</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">supplier<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="net.fellbaum.jemoji/Emoji///PointingToDeclaration/">Emoji</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Lazily converts the supplied <span data-unresolved-link="net.fellbaum.jemoji/Emoji///PointingToDeclaration/">Emoji</span> into a JDA <a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/emoji/UnicodeEmoji.html">UnicodeEmoji</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1609069950%2FFunctions%2F1100755421" anchor-label="listener" id="1609069950%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="listener.html"><span><span>listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1609069950%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="listener.html">T</a><span class="token operator"> : </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/GenericEvent.html">GenericEvent</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a><span class="token punctuation">.</span><a href="listener.html"><span class="token function">listener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><span class="token keyword">suspend </span><a href="../io.github.freya022.botcommands.api.core.hooks/-coroutine-event-listener/index.html">CoroutineEventListener</a><span class="token punctuation">.</span><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="listener.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Creates and registers an event listener fired for every event of type <a href="listener.html">T</a> on this shard.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="listener.html">T</a><span class="token operator"> : </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/GenericEvent.html">GenericEvent</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/ShardManager.html">ShardManager</a><span class="token punctuation">.</span><a href="listener.html"><span class="token function">listener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><span class="token keyword">suspend </span><a href="../io.github.freya022.botcommands.api.core.hooks/-coroutine-event-listener/index.html">CoroutineEventListener</a><span class="token punctuation">.</span><span class="token punctuation">(</span>event<span class="token operator">: </span><a href="listener.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Creates and registers an event listener fired for every event of type <a href="listener.html">T</a> on every shard.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1638246720%2FFunctions%2F1100755421" anchor-label="loggerOf" id="1638246720%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logger-of.html"><span>logger</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1638246720%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="logger-of.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="io.github.oshai.kotlinlogging/KotlinLogging///PointingToDeclaration/">KotlinLogging</span><span class="token punctuation">.</span><a href="logger-of.html"><span class="token function">loggerOf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.github.oshai.kotlinlogging/KLogger///PointingToDeclaration/">KLogger</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="25170380%2FFunctions%2F1100755421" anchor-label="mapToArray" id="25170380%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map-to-array.html"><span>map</span><wbr><span>To</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="25170380%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="map-to-array.html">T</a><span class="token punctuation">, </span><a href="map-to-array.html">R</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="map-to-array.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="map-to-array.html"><span class="token function">mapToArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="map-to-array.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="map-to-array.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="map-to-array.html">R</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="map-to-array.html">T</a><span class="token punctuation">, </span><a href="map-to-array.html">R</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="map-to-array.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="map-to-array.html"><span class="token function">mapToArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="map-to-array.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="map-to-array.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="map-to-array.html">R</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-600728482%2FFunctions%2F1100755421" anchor-label="namedDefaultScope" id="-600728482%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="named-default-scope.html"><span>named</span><wbr><span>Default</span><wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-600728482%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="named-default-scope.html"><span class="token function">namedDefaultScope</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">coroutineName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">executor<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executor.html">Executor</a><span class="token punctuation">, </span></span><span class="parameter ">job<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">errorHandler<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineExceptionHandler///PointingToDeclaration/">CoroutineExceptionHandler</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token operator"> = </span>EmptyCoroutineContext</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="named-default-scope.html"><span class="token function">namedDefaultScope</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">corePoolSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">isDaemon<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">job<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">errorHandler<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineExceptionHandler///PointingToDeclaration/">CoroutineExceptionHandler</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token operator"> = </span>EmptyCoroutineContext</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span></div><div class="brief "><p class="paragraph">Creates a <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span> with incremental thread naming.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-126488420%2FFunctions%2F1100755421" anchor-label="nullIfBlank" id="-126488420%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="null-if-blank.html"><span>null</span><wbr><span>If</span><wbr><span><span>Blank</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-126488420%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="null-if-blank.html"><span class="token function">nullIfBlank</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-171761195%2FFunctions%2F1100755421" anchor-label="nullIfEmpty" id="-171761195%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="null-if-empty.html"><span>null</span><wbr><span>If</span><wbr><span><span>Empty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-171761195%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="null-if-empty.html"><span class="token function">nullIfEmpty</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1866874425%2FFunctions%2F1100755421" anchor-label="overwriteBytes" id="1866874425%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="overwrite-bytes.html"><span>overwrite</span><wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1866874425%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="overwrite-bytes.html"><span class="token function">overwriteBytes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html">Path</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1589404126%2FFunctions%2F1100755421" anchor-label="putIfAbsentOrNull" id="1589404126%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-if-absent-or-null.html"><span>put</span><wbr><span>If</span><wbr><span>Absent</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1589404126%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="put-if-absent-or-null.html">K</a><span class="token punctuation">, </span><a href="put-if-absent-or-null.html">V</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="put-if-absent-or-null.html">K</a><span class="token punctuation">, </span><a href="put-if-absent-or-null.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="put-if-absent-or-null.html"><span class="token function">putIfAbsentOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="put-if-absent-or-null.html">K</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="put-if-absent-or-null.html">V</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="put-if-absent-or-null.html">V</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns <code class="lang-kotlin">null</code> if the element already exists</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965493404%2FFunctions%2F1100755421" anchor-label="readResource" id="965493404%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-resource.html"><span>read</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965493404%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-resource.html"><span class="token function">readResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/InputStream.html">InputStream</a></div><div class="brief "><p class="paragraph">Reads a resource relative from the calling class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-287296929%2FFunctions%2F1100755421" anchor-label="readResourceAsString" id="-287296929%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-resource-as-string.html"><span>read</span><wbr><span>Resource</span><wbr><span>As</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-287296929%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-resource-as-string.html"><span class="token function">readResourceAsString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Reads a resource relative as a string from the calling class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-540131159%2FFunctions%2F1100755421" anchor-label="refillGreedy" id="-540131159%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refill-greedy.html"><span>refill</span><wbr><span><span>Greedy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-540131159%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderRefillStage.html">BandwidthBuilder.BandwidthBuilderRefillStage</a><span class="token punctuation">.</span><a href="refill-greedy.html"><span class="token function">refillGreedy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">period<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderBuildStage.html">BandwidthBuilder.BandwidthBuilderBuildStage</a></div><div class="brief "><p class="paragraph">Configures refill that does refill of tokens in greedy manner, it will try to add the tokens to bucket as soon as possible.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="39033755%2FFunctions%2F1100755421" anchor-label="refillIntervally" id="39033755%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refill-intervally.html"><span>refill</span><wbr><span><span>Intervally</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="39033755%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderRefillStage.html">BandwidthBuilder.BandwidthBuilderRefillStage</a><span class="token punctuation">.</span><a href="refill-intervally.html"><span class="token function">refillIntervally</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">period<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderBuildStage.html">BandwidthBuilder.BandwidthBuilderBuildStage</a></div><div class="brief "><p class="paragraph">Configures refill that does refill of tokens in intervally manner.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-342210748%2FFunctions%2F1100755421" anchor-label="refillIntervallyAligned" id="-342210748%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refill-intervally-aligned.html"><span>refill</span><wbr><span>Intervally</span><wbr><span><span>Aligned</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-342210748%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderRefillStage.html">BandwidthBuilder.BandwidthBuilderRefillStage</a><span class="token punctuation">.</span><a href="refill-intervally-aligned.html"><span class="token function">refillIntervallyAligned</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">period<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">timeOfFirstRefill<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html">Instant</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderBuildStage.html">BandwidthBuilder.BandwidthBuilderBuildStage</a></div><div class="brief "><p class="paragraph">Configures refill that does refill of tokens in intervally manner. "Intervally" in opposite to "greedy" will wait until whole period will be elapsed before regenerate tokens.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="499225456%2FFunctions%2F1100755421" anchor-label="refillIntervallyAlignedWithAdaptiveInitialTokens" id="499225456%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="refill-intervally-aligned-with-adaptive-initial-tokens.html"><span>refill</span><wbr><span>Intervally</span><wbr><span>Aligned</span><wbr><span>With</span><wbr><span>Adaptive</span><wbr><span>Initial</span><wbr><span><span>Tokens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="499225456%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderRefillStage.html">BandwidthBuilder.BandwidthBuilderRefillStage</a><span class="token punctuation">.</span><a href="refill-intervally-aligned-with-adaptive-initial-tokens.html"><span class="token function">refillIntervallyAlignedWithAdaptiveInitialTokens</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">period<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">timeOfFirstRefill<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html">Instant</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BandwidthBuilder.BandwidthBuilderBuildStage.html">BandwidthBuilder.BandwidthBuilderBuildStage</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1808978149%2FFunctions%2F1100755421" anchor-label="toBoxed" id="1808978149%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-boxed.html"><span>to</span><wbr><span><span>Boxed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1808978149%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="to-boxed.html"><span class="token function">toBoxed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="to-boxed.html"><span class="token function">toBoxed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="198948281%2FFunctions%2F1100755421" anchor-label="toImmutableList" id="198948281%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-immutable-list.html"><span>to</span><wbr><span>Immutable</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="198948281%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="to-immutable-list.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="to-immutable-list.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="to-immutable-list.html"><span class="token function">toImmutableList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="to-immutable-list.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="977897899%2FFunctions%2F1100755421" anchor-label="toImmutableMap" id="977897899%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-immutable-map.html"><span>to</span><wbr><span>Immutable</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="977897899%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="to-immutable-map.html">K</a><span class="token punctuation">, </span><a href="to-immutable-map.html">V</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="to-immutable-map.html">K</a><span class="token punctuation">, </span><a href="to-immutable-map.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="to-immutable-map.html"><span class="token function">toImmutableMap</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="to-immutable-map.html">K</a><span class="token punctuation">, </span><a href="to-immutable-map.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1242996861%2FFunctions%2F1100755421" anchor-label="toImmutableSet" id="-1242996861%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-immutable-set.html"><span>to</span><wbr><span>Immutable</span><wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1242996861%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="to-immutable-set.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="to-immutable-set.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="to-immutable-set.html"><span class="token function">toImmutableSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="to-immutable-set.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1548296634%2FFunctions%2F1100755421" anchor-label="unmodifiableView" id="1548296634%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unmodifiable-view.html"><span>unmodifiable</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1548296634%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="unmodifiable-view.html"><span class="token function">unmodifiableView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="unmodifiable-view.html"><span class="token function">unmodifiableView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="unmodifiable-view.html">K</a><span class="token punctuation">, </span><a href="unmodifiable-view.html">V</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">K</a><span class="token punctuation">, </span><a href="unmodifiable-view.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="unmodifiable-view.html"><span class="token function">unmodifiableView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">K</a><span class="token punctuation">, </span><a href="unmodifiable-view.html">V</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="unmodifiable-view.html"><span class="token function">unmodifiableView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="unmodifiable-view.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="256719849%2FFunctions%2F1100755421" anchor-label="withResource" id="256719849%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-resource.html"><span>with</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="256719849%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="with-resource.html">R</a><span class="token operator">&gt; </span><a href="with-resource.html"><span class="token function">withResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="with-resource.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="with-resource.html">R</a></div><div class="brief "><p class="paragraph">Reads a resource relative from the calling class.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

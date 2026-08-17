@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.github.freya022.botcommands.api.core.db</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.core.db////PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../index.html">BotCommands-core</a><span class="delimiter">/</span><span class="current">io.github.freya022.botcommands.api.core.db</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-522070734%2FClasslikes%2F1100755421" anchor-label="AbstractPreparedStatement" id="-522070734%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-abstract-prepared-statement/index.html"><span>Abstract</span><wbr><span>Prepared</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522070734%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-abstract-prepared-statement/index.html">AbstractPreparedStatement</a> : <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/PreparedStatement.html">PreparedStatement</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1361130096%2FClasslikes%2F1100755421" anchor-label="BlockingDatabase" id="-1361130096%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-blocking-database/index.html"><span>Blocking</span><wbr><span><span>Database</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1361130096%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jspecify.annotations/NullMarked///PointingToDeclaration/"><span class="token annotation builtin">NullMarked</span></span></div><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-lazy/index.html"><span class="token annotation builtin">Lazy</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-b-service/index.html"><span class="token annotation builtin">BService</span></a></div></div><span class="token keyword">open </span><span class="token keyword">class </span><a href="-blocking-database/index.html">BlockingDatabase</a></div><div class="brief ">Utility class to use connections given by the <a href="-connection-supplier/index.html">ConnectionSupplier</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1740928635%2FClasslikes%2F1100755421" anchor-label="BlockingPreparedStatement" id="-1740928635%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-blocking-prepared-statement/index.html"><span>Blocking</span><wbr><span>Prepared</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1740928635%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-blocking-prepared-statement/index.html">BlockingPreparedStatement</a> : <a href="-abstract-prepared-statement/index.html">AbstractPreparedStatement</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="554096217%2FClasslikes%2F1100755421" anchor-label="BlockingTransaction" id="554096217%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-blocking-transaction/index.html"><span>Blocking</span><wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554096217%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jspecify.annotations/NullMarked///PointingToDeclaration/"><span class="token annotation builtin">NullMarked</span></span></div></div><span class="token keyword">class </span><a href="-blocking-transaction/index.html">BlockingTransaction</a> : <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html">Record</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-572782314%2FClasslikes%2F1100755421" anchor-label="ConnectionSupplier" id="-572782314%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-connection-supplier/index.html"><span>Connection</span><wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-572782314%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span class="token annotation builtin">InterfacedService</span></a><span class="token punctuation">(</span><span>acceptMultiple<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-missing-service-message/index.html"><span class="token annotation builtin">MissingServiceMessage</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Using a database required a service implementing ConnectionSupplier"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="-connection-supplier/index.html">ConnectionSupplier</a></div><div class="brief "><p class="paragraph">Allows access to an SQL database.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-386843067%2FClasslikes%2F1100755421" anchor-label="Database" id="-386843067%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-database/index.html"><span><span>Database</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-386843067%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span class="token annotation builtin">InterfacedService</span></a><span class="token punctuation">(</span><span>acceptMultiple<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="-database/index.html">Database</a></div><div class="brief "><p class="paragraph">Utility class to use connections given by the <a href="-connection-supplier/index.html">ConnectionSupplier</a>, in a suspending style.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1073167963%2FClasslikes%2F1100755421" anchor-label="DBResult" id="-1073167963%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-b-result/index.html"><span><span>DBResult</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1073167963%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-d-b-result/index.html">DBResult</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-d-b-result/index.html">DBResult</a><span class="token operator">&gt; </span>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html">ResultSet</a></div><div class="brief "><p class="paragraph">Utility class to iterate over a <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html">ResultSet</a>, with a few methods to use nullable objects instead of booleans.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1434635595%2FClasslikes%2F1100755421" anchor-label="HikariSourceSupplier" id="1434635595%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hikari-source-supplier/index.html"><span>Hikari</span><wbr><span>Source</span><wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1434635595%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span class="token annotation builtin">InterfacedService</span></a><span class="token punctuation">(</span><span>acceptMultiple<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="-hikari-source-supplier/index.html">HikariSourceSupplier</a> : <a href="-connection-supplier/index.html">ConnectionSupplier</a></div><div class="brief "><p class="paragraph">Sub-interface of <a href="-connection-supplier/index.html">ConnectionSupplier</a> delegating simple <span data-unresolved-link="com.zaxxer.hikari/HikariDataSource///PointingToDeclaration/">HikariDataSource</span> getters.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="105046363%2FClasslikes%2F1100755421" anchor-label="StatementFunction" id="105046363%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-statement-function/index.html"><span>Statement</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="105046363%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-statement-function/index.html">StatementFunction</a><span class="token operator">&lt;</span><a href="-statement-function/index.html">R</a><span class="token punctuation">, </span><a href="-statement-function/index.html">E</a><span class="token operator"> : </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Exception.html">Exception</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief ">Functional interface for Java JDBC prepared statements.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="982808054%2FClasslikes%2F1100755421" anchor-label="SuspendingPreparedStatement" id="982808054%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-suspending-prepared-statement/index.html"><span>Suspending</span><wbr><span>Prepared</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="982808054%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a> : <a href="-abstract-prepared-statement/index.html">AbstractPreparedStatement</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="149990788%2FClasslikes%2F1100755421" anchor-label="Transaction" id="149990788%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transaction/index.html"><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="149990788%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-transaction/index.html">Transaction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2636172%2FClasslikes%2F1100755421" anchor-label="TransactionFunction" id="2636172%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transaction-function/index.html"><span>Transaction</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2636172%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-transaction-function/index.html">TransactionFunction</a><span class="token operator">&lt;</span><a href="-transaction-function/index.html">R</a><span class="token punctuation">, </span><a href="-transaction-function/index.html">E</a><span class="token operator"> : </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Exception.html">Exception</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief ">Functional interface for Java JDBC transactions.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="587313106%2FFunctions%2F1100755421" anchor-label="getKotlinInstant" id="587313106%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-kotlin-instant.html"><span>get</span><wbr><span>Kotlin</span><wbr><span><span>Instant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="587313106%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-d-b-result/index.html">DBResult</a><span class="token punctuation">.</span><a href="get-kotlin-instant.html"><span class="token function">getKotlinInstant</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">columnName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-instant/index.html">Instant</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1102067992%2FFunctions%2F1100755421" anchor-label="getKotlinInstantOrNull" id="-1102067992%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-kotlin-instant-or-null.html"><span>get</span><wbr><span>Kotlin</span><wbr><span>Instant</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1102067992%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-d-b-result/index.html">DBResult</a><span class="token punctuation">.</span><a href="get-kotlin-instant-or-null.html"><span class="token function">getKotlinInstantOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">columnName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-instant/index.html">Instant</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-83318616%2FFunctions%2F1100755421" anchor-label="preparedStatement" id="-83318616%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prepared-statement.html"><span>prepared</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83318616%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="-database/index.html">Database</a><span class="token punctuation">.</span><a href="prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">columnNames<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="prepared-statement.html">R</a></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="-database/index.html">Database</a><span class="token punctuation">.</span><a href="prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">generatedKeys<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="prepared-statement.html">R</a></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="-database/index.html">Database</a><span class="token punctuation">.</span><a href="prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">columnIndexes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="prepared-statement.html">R</a></div><div class="brief "><p class="paragraph">Creates a statement from the given SQL statement, runs the <a href="prepared-statement.html">block</a>, commits the changes and closes the connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1626041562%2FFunctions%2F1100755421" anchor-label="transactional" id="-1626041562%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transactional.html"><span><span>transactional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1626041562%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="transactional.html">R</a><span class="token operator">&gt; </span><a href="-database/index.html">Database</a><span class="token punctuation">.</span><a href="transactional.html"><span class="token function">transactional</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><span class="token keyword">suspend </span><a href="-transaction/index.html">Transaction</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="transactional.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="transactional.html">R</a></div><div class="brief "><p class="paragraph">Acquires a database connection, runs the <a href="transactional.html">block</a>, commits the changes and closes the connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1512816864%2FFunctions%2F1100755421" anchor-label="withLogger" id="-1512816864%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-logger.html"><span>with</span><wbr><span><span>Logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1512816864%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/PreparedStatement.html">PreparedStatement</a><span class="token punctuation">.</span><a href="with-logger.html"><span class="token function">withLogger</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">logger<span class="token operator">: </span><span data-unresolved-link="io.github.oshai.kotlinlogging/KLogger///PointingToDeclaration/">KLogger</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/PreparedStatement.html">PreparedStatement</a><span class="token punctuation">.</span><a href="with-logger.html"><span class="token function">withLogger</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/PreparedStatement.html">PreparedStatement</a><span class="token punctuation">.</span><a href="with-logger.html"><span class="token function">withLogger</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">logger<span class="token operator">: </span><span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the logger used to log the query.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

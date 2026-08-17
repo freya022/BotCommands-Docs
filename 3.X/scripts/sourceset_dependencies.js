@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":BotCommands-core/main":[],":BotCommands-spring/main":[],":BotCommands-jda-ktx/main":[],":BotCommands-restarter/main":[],":BotCommands-typesafe-messages:core/main":[],":BotCommands-method-accessors:core/main":[]}'

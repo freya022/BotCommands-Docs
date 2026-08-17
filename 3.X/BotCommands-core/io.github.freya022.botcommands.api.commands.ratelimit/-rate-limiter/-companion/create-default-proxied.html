@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>createDefaultProxied</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="member" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.commands.ratelimit/RateLimiter.Companion/createDefaultProxied/#io.github.freya022.botcommands.api.commands.ratelimit.RateLimitScope#io.github.bucket4j.distributed.proxy.ProxyManager[kotlin.String]#io.github.freya022.botcommands.api.commands.ratelimit.bucket.BucketConfigurationSupplier#kotlin.Boolean/PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../../index.html">io.github.freya022.botcommands.api.commands.ratelimit</a><span class="delimiter">/</span><a href="../index.html">RateLimiter</a><span class="delimiter">/</span><a href="index.html">Companion</a><span class="delimiter">/</span><span class="current">createDefaultProxied</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>create</span><wbr><span>Default</span><wbr><span><span>Proxied</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="create-default-proxied.html"><span class="token function">createDefaultProxied</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../-rate-limit-scope/index.html">RateLimitScope</a><span class="token punctuation">, </span></span><span class="parameter ">proxyManager<span class="token operator">: </span><a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/distributed/proxy/ProxyManager.html">ProxyManager</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">configurationSupplier<span class="token operator">: </span><a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.bucket/-bucket-configuration-supplier/index.html">BucketConfigurationSupplier</a><span class="token punctuation">, </span></span><span class="parameter ">deleteOnRefill<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">RateLimiter</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/commands/ratelimit/RateLimiter.kt#L141">source</a>)</span></span></div><p class="paragraph">Creates a <a href="../index.html">RateLimiter</a> implementation which retrieves its buckets using <a href="create-default-proxied.html">proxyManager</a>, see <a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.handler/-default-rate-limit-handler/index.html">DefaultRateLimitHandler</a> and <a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.bucket/-proxy-bucket-accessor/index.html">ProxyBucketAccessor</a> for details.</p><h3 class="">Requirements</h3><p class="paragraph">The proxy requires a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a> to store the bucket key.</p><h4 class="">Using a database</h4><p class="paragraph">First, install the <a href="https://bucket4j.com/8.14.0/toc.html#bucket4j-postgresql">PostgreSQL module for Bucket4J</a> (recommended, Bucket4J supports other RDBMs), then, use the following DDL to create the tables storing the buckets, I recommend you put this in a migration script, using Flyway:</p><div class="sample-container"><pre><code class="block lang-sql" theme="idea">CREATE TABLE bucket(id TEXT PRIMARY KEY, state BYTEA, expires_at BIGINT);</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><h4 class="">Anything else</h4><p class="paragraph">You can also use anything that accepts a String as your bucket key, such as JCache and Redis, see the <a href="https://bucket4j.com/8.14.0/toc.html#distributed-facilities">Bucket4J docs</a> for more details.</p><h3 class="">Example</h3><div class="sample-container"><pre><code class="block lang-kt" theme="idea">@BService<br>class ProxyManagerProvider {<br>    @BService<br>    open fun proxyManager(hikariSourceSupplier: HikariSourceSupplier): ProxyManager&lt;String&gt; {<br>        // Create a proxy to manager buckets, persisting with PostgreSQL,<br>        // see https://bucket4j.com/8.14.0/toc.html#postgresqlselectforupdatebasedproxymanager<br>        return Bucket4jPostgreSQL.selectForUpdateBasedBuilder(hikariSourceSupplier.source)<br>            // Bucket expiration, needs to be triggered manually,<br>            // see https://bucket4j.com/8.14.0/toc.html#expiration-policy<br>            .expirationAfterWrite(ExpirationAfterWriteStrategy.basedOnTimeForRefillingBucketUpToMax(1.minutes.toJavaDuration()))<br>            // RateLimiter#createDefaultProxied uses a String key<br>            .primaryKeyMapper(PreparedStatement::setString)<br>            .build()<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><div class="sample-container"><pre><code class="block lang-kt" theme="idea">@Command<br>class SlashPersistentRateLimit(private val proxyManager: ProxyManager&lt;String&gt;) : GlobalApplicationCommandProvider {<br>    fun onSlashPersistentRateLimit(event: GuildSlashEvent) {<br>        event.reply_("Hi", ephemeral = true).queue()<br>    }<br><br>    override fun declareGlobalApplicationCommands(manager: GlobalApplicationCommandManager) {<br>        manager.slashCommand("persistent_rate_limit", function = ::onSlashPersistentRateLimit) {<br>            // Allow using the command once every hour<br>            // NOTE: this won't take effect if you are the bot owner<br>            val cooldown = Buckets.ofCooldown(1.hours)<br>            // Apply limit on each user, regardless or guild/channel<br>            val rateLimiter = RateLimiter.createDefaultProxied(RateLimitScope.USER, proxyManager, cooldown.toSupplier())<br>            // Register anonymous rate limit, only on this command<br>            rateLimit(rateLimiter)<br>        }<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>scope</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Scope of the rate limit, see <a href="../../-rate-limit-scope/index.html">RateLimitScope</a> values.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>proxy</span><wbr><span><span>Manager</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The proxy supplying buckets from a key, based on the <a href="create-default-proxied.html">scope</a></p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>configuration</span><wbr><span><span>Supplier</span></span></u></div></span></div><div><div class="title"><p class="paragraph">A supplier of <a href="https://javadoc.io/doc/com.bucket4j/bucket4j_jdk17-core/8.14.0/io.github.bucket4j.core/io/github/bucket4j/BucketConfiguration.html">BucketConfiguration</a>, describing the rate limits</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>delete</span><wbr><span>On</span><wbr><span><span>Refill</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the rate limit message should be deleted after expiring</p></div></div></div></div></div><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.handler/-default-rate-limit-handler/index.html"><span>Default</span><wbr><span>Rate</span><wbr><span>Limit</span><wbr><span><span>Handler</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.bucket/-proxy-bucket-accessor/index.html"><span>Proxy</span><wbr><span>Bucket</span><wbr><span><span>Accessor</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../-rate-limit-scope/index.html"><span>Rate</span><wbr><span>Limit</span><wbr><span><span>Scope</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../io.github.freya022.botcommands.api.commands.ratelimit.bucket/-buckets/index.html"><span><span>Buckets</span></span></a></div></span></div><div></div></div></div></div></div></div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

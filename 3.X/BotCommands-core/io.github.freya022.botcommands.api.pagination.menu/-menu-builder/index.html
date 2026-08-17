@@ -1,0 +1,565 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MenuBuilder</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.pagination.menu/MenuBuilder///PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.pagination.menu</a><span class="delimiter">/</span><span class="current">MenuBuilder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Menu</span><wbr><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span> : <a href="../-abstract-menu-builder/index.html">AbstractMenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token punctuation">, </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/pagination/menu/MenuBuilder.kt#L13">source</a>)</span></span></div><p class="paragraph">Builds a <a href="../-menu/index.html">Menu</a>.</p><h4 class="tableheader">Type Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>E</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Type of the entries</p></div></div></div></div></div><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.freya022.botcommands.api.pagination/-paginators/menu.html"><span>Paginators.</span><wbr><span>menu</span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1743727029%2FProperties%2F1100755421" anchor-label="cleanAfterRefresh" id="-1743727029%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/clean-after-refresh.html"><span>clean</span><wbr><span>After</span><wbr><span><span>Refresh</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1743727029%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/clean-after-refresh.html">cleanAfterRefresh</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1861358947%2FProperties%2F1100755421" anchor-label="constraints" id="-1861358947%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/constraints.html"><span><span>constraints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1861358947%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/constraints.html">constraints</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.data/-interaction-constraints/index.html">InteractionConstraints</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-576930225%2FProperties%2F1100755421" anchor-label="deleteContent" id="-576930225%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/delete-content.html"><span>delete</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-576930225%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/delete-content.html">deleteContent</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="846049805%2FProperties%2F1100755421" anchor-label="entries" id="846049805%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/entries.html"><span><span>entries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846049805%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-abstract-menu-builder/entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1118468844%2FProperties%2F1100755421" anchor-label="firstContent" id="-1118468844%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/first-content.html"><span>first</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1118468844%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/first-content.html">firstContent</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1232819642%2FProperties%2F1100755421" anchor-label="hasDeleteButton" id="-1232819642%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/has-delete-button.html"><span>has</span><wbr><span>Delete</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1232819642%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/has-delete-button.html">hasDeleteButton</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-210655430%2FProperties%2F1100755421" anchor-label="lastContent" id="-210655430%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/last-content.html"><span>last</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-210655430%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/last-content.html">lastContent</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1839092867%2FProperties%2F1100755421" anchor-label="maxEntriesPerPage" id="-1839092867%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/max-entries-per-page.html"><span>max</span><wbr><span>Entries</span><wbr><span>Per</span><wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1839092867%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-abstract-menu-builder/max-entries-per-page.html">maxEntriesPerPage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1460540521%2FProperties%2F1100755421" anchor-label="nextContent" id="-1460540521%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/next-content.html"><span>next</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1460540521%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/next-content.html">nextContent</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="124489089%2FProperties%2F1100755421" anchor-label="pageEditor" id="124489089%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/page-editor.html"><span>page</span><wbr><span><span>Editor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124489089%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-abstract-menu-builder/page-editor.html">pageEditor</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination/-page-editor/index.html">PageEditor</a><span class="token operator">&lt;</span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-305890405%2FProperties%2F1100755421" anchor-label="previousContent" id="-305890405%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/previous-content.html"><span>previous</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-305890405%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/previous-content.html">previousContent</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1304820571%2FProperties%2F1100755421" anchor-label="rowPrefixSupplier" id="-1304820571%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/row-prefix-supplier.html"><span>row</span><wbr><span>Prefix</span><wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304820571%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-abstract-menu-builder/row-prefix-supplier.html">rowPrefixSupplier</a><span class="token operator">: </span><a href="../-row-prefix-supplier/index.html">RowPrefixSupplier</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1320203474%2FProperties%2F1100755421" anchor-label="timeout" id="1320203474%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/timeout.html"><span><span>timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1320203474%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/timeout.html">timeout</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination/-timeout-info/index.html">TimeoutInfo</a><span class="token operator">&lt;</span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1844049316%2FProperties%2F1100755421" anchor-label="transformer" id="1844049316%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/transformer.html"><span><span>transformer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1844049316%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-abstract-menu-builder/transformer.html">transformer</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination.menu.transformer/-entry-transformer/index.html">EntryTransformer</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-290949331%2FFunctions%2F1100755421" anchor-label="build" id="-290949331%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-290949331%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Builds this pagination instance</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1642701232%2FFunctions%2F1100755421" anchor-label="cleanAfterRefresh" id="-1642701232%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/clean-after-refresh.html"><span>clean</span><wbr><span>After</span><wbr><span><span>Refresh</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1642701232%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/clean-after-refresh.html"><span class="token function">cleanAfterRefresh</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cleanAfterRefresh<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets whether the components of the pagination should be invalidated after a refresh, enabling you to save memory when a new page is requested.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-972618445%2FFunctions%2F1100755421" anchor-label="noTimeout" id="-972618445%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/no-timeout.html"><span>no</span><wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-972618445%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/no-timeout.html"><span class="token function">noTimeout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Disables the timeout for this pagination instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1946842864%2FFunctions%2F1100755421" anchor-label="setConstraints" id="-1946842864%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/set-constraints.html"><span>set</span><wbr><span><span>Constraints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1946842864%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/set-constraints.html"><span class="token function">setConstraints</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">constraints<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.data/-interaction-constraints/index.html">InteractionConstraints</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the interaction constraints for this pagination object</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="500140432%2FFunctions%2F1100755421" anchor-label="setDeleteContent" id="500140432%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-delete-content.html"><span>set</span><wbr><span>Delete</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="500140432%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-delete-content.html"><span class="token function">setDeleteContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">deleteContent<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the content for the button which deletes this paginator</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1554914129%2FFunctions%2F1100755421" anchor-label="setFirstContent" id="-1554914129%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-first-content.html"><span>set</span><wbr><span>First</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1554914129%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-first-content.html"><span class="token function">setFirstContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">firstContent<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the content for the button which goes to the first page</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-63021691%2FFunctions%2F1100755421" anchor-label="setLastContent" id="-63021691%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-last-content.html"><span>set</span><wbr><span>Last</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-63021691%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-last-content.html"><span class="token function">setLastContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lastContent<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the content for the button which goes to the last page</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-348970339%2FFunctions%2F1100755421" anchor-label="setMaxEntriesPerPage" id="-348970339%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/set-max-entries-per-page.html"><span>set</span><wbr><span>Max</span><wbr><span>Entries</span><wbr><span>Per</span><wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-348970339%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-abstract-menu-builder/set-max-entries-per-page.html"><span class="token function">setMaxEntriesPerPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxEntriesPerPage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the maximum number of entries per page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="707464392%2FFunctions%2F1100755421" anchor-label="setNextContent" id="707464392%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-next-content.html"><span>set</span><wbr><span>Next</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="707464392%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-next-content.html"><span class="token function">setNextContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nextContent<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the content for the button which goes to the next page</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1744437788%2FFunctions%2F1100755421" anchor-label="setPageEditor" id="1744437788%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/set-page-editor.html"><span>set</span><wbr><span>Page</span><wbr><span><span>Editor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1744437788%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-abstract-menu-builder/set-page-editor.html"><span class="token function">setPageEditor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pageEditor<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination/-page-editor/index.html">PageEditor</a><span class="token operator">&lt;</span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets an optional the <a href="../../io.github.freya022.botcommands.api.pagination/-page-editor/index.html">PageEditor</a> for this menu.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2037575236%2FFunctions%2F1100755421" anchor-label="setPreviousContent" id="2037575236%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-previous-content.html"><span>set</span><wbr><span>Previous</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2037575236%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/set-previous-content.html"><span class="token function">setPreviousContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">previousContent<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.components.utils/-button-content/index.html">ButtonContent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the content for the button which goes to the previous page</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-556239207%2FFunctions%2F1100755421" anchor-label="setRowPrefixSupplier" id="-556239207%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/set-row-prefix-supplier.html"><span>set</span><wbr><span>Row</span><wbr><span>Prefix</span><wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-556239207%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-abstract-menu-builder/set-row-prefix-supplier.html"><span class="token function">setRowPrefixSupplier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rowPrefixSupplier<span class="token operator">: </span><a href="../-row-prefix-supplier/index.html">RowPrefixSupplier</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the row prefix supplier for this menu.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2018785154%2FFunctions%2F1100755421" anchor-label="setTimeout" id="2018785154%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/set-timeout.html"><span>set</span><wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2018785154%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/set-timeout.html"><span class="token function">setTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">onTimeout<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination/-blocking-pagination-timeout-consumer/index.html">BlockingPaginationTimeoutConsumer</a><span class="token operator">&lt;</span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination/-abstract-pagination-builder/set-timeout.html"><span class="token function">setTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/index.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">onTimeout<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination/-suspending-pagination-timeout-consumer/index.html">SuspendingPaginationTimeoutConsumer</a><span class="token operator">&lt;</span><a href="../-menu/index.html">Menu</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the timeout for this pagination instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="66074264%2FFunctions%2F1100755421" anchor-label="setTransformer" id="66074264%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-menu-builder/set-transformer.html"><span>set</span><wbr><span><span>Transformer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="66074264%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-abstract-menu-builder/set-transformer.html"><span class="token function">setTransformer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transformer<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.pagination.menu.transformer/-entry-transformer/index.html">EntryTransformer</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the entry transformer for this menu</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1448372482%2FFunctions%2F1100755421" anchor-label="useDeleteButton" id="-1448372482%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/use-delete-button.html"><span>use</span><wbr><span>Delete</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1448372482%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../io.github.freya022.botcommands.api.pagination.paginator/-abstract-paginator-builder/use-delete-button.html"><span class="token function">useDeleteButton</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hasDeleteButton<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">MenuBuilder</a><span class="token operator">&lt;</span><a href="index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Specifies whether this paginator should have a delete button.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

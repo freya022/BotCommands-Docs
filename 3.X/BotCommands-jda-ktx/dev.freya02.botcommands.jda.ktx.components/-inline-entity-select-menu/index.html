@@ -1,0 +1,344 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InlineEntitySelectMenu</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-jda-ktx/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-jda-ktx/main" data-filter=":BotCommands-jda-ktx/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-jda-ktx::dev.freya02.botcommands.jda.ktx.components/InlineEntitySelectMenu///PointingToDeclaration//1205949177">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-jda-ktx</a><span class="delimiter">/</span><a href="../index.html">dev.freya02.botcommands.jda.ktx.components</a><span class="delimiter">/</span><span class="current">InlineEntitySelectMenu</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Inline</span><wbr><span>Entity</span><wbr><span>Select</span><wbr><span><span>Menu</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">InlineEntitySelectMenu</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>builder<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html">EntitySelectMenu.Builder</a><span class="token punctuation">, </span></span><span class="parameter ">types<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.SelectTarget.html">EntitySelectMenu.SelectTarget</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-inline-select-menu/index.html">InlineSelectMenu</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-jda-ktx/src/main/kotlin/dev/freya02/botcommands/jda/ktx/components/EntitySelectMenu.kt#L8">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="1588690901%2FConstructors%2F1205949177" anchor-label="InlineEntitySelectMenu" id="1588690901%2FConstructors%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-inline-entity-select-menu.html"><span>Inline</span><wbr><span>Entity</span><wbr><span>Select</span><wbr><span><span>Menu</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1588690901%2FConstructors%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html">EntitySelectMenu.Builder</a><span class="token punctuation">, </span></span><span class="parameter ">types<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.SelectTarget.html">EntitySelectMenu.SelectTarget</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1995233066%2FProperties%2F1205949177" anchor-label="builder" id="1995233066%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="builder.html"><span><span>builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1995233066%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="builder.html">builder</a><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html">EntitySelectMenu.Builder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1550397855%2FProperties%2F1205949177" anchor-label="channelTypes" id="1550397855%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="channel-types.html"><span>channel</span><wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1550397855%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="channel-types.html">channelTypes</a><span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components.utils/-observable-accumulator/index.html">ObservableAccumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelType</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">For select menus with the <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.SelectTarget.html#CHANNEL">CHANNEL</a> type, the <a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelTypes</a> that should be supported by this menu, see <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html#setChannelTypes(kotlin.collections.MutableCollection)">EntitySelectMenu.Builder.setChannelTypes</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-118885786%2FProperties%2F1205949177" anchor-label="customId" id="-118885786%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/custom-id.html"><span>custom</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-118885786%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/custom-id.html">customId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The custom ID, it can be used to pass data, then be read from an interaction</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2113379074%2FProperties%2F1205949177" anchor-label="defaultValues" id="2113379074%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-values.html"><span>default</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2113379074%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="default-values.html">defaultValues</a><span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components.utils/-observable-accumulator/index.html">ObservableAccumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.DefaultValue.html">EntitySelectMenu.DefaultValue</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The default values that will be shown to the user, see <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html#setDefaultValues(net.dv8tion.jda.api.components.selections.EntitySelectMenu.DefaultValue...)">EntitySelectMenu.Builder.setDefaultValues</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1118578262%2FProperties%2F1205949177" anchor-label="disabled" id="1118578262%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/disabled.html"><span><span>disabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1118578262%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/disabled.html">disabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this select menu should be disabled, cannot be <code class="lang-kotlin">true</code> in modals, defaults to <code class="lang-kotlin">false</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1338421278%2FProperties%2F1205949177" anchor-label="maxValues" id="-1338421278%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/max-values.html"><span>max</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1338421278%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/max-values.html">maxValues</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The maximum amount of values a user can select, must not exceed <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/SelectMenu.html#OPTIONS_MAX_AMOUNT">SelectMenu.OPTIONS_MAX_AMOUNT</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1293201716%2FProperties%2F1205949177" anchor-label="minValues" id="1293201716%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/min-values.html"><span>min</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1293201716%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/min-values.html">minValues</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The minimum amount of values a user can select, default to <code class="lang-kotlin">1</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1972701195%2FProperties%2F1205949177" anchor-label="placeholder" id="-1972701195%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/placeholder.html"><span><span>placeholder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1972701195%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/placeholder.html">placeholder</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Displayed when no selections have been made yet, see <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/SelectMenu.Builder.html#setPlaceholder(kotlin.String)">SelectMenu.Builder.setPlaceholder</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1384598893%2FProperties%2F1205949177" anchor-label="required" id="-1384598893%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/required.html"><span><span>required</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1384598893%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/required.html">required</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Whether the user must populate this select menu if inside a Modal.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2123624948%2FProperties%2F1205949177" anchor-label="types" id="-2123624948%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="types.html"><span><span>types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2123624948%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="types.html">types</a><span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components.utils/-observable-accumulator/index.html">ObservableAccumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.SelectTarget.html">EntitySelectMenu.SelectTarget</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.SelectTarget.html">SelectTargets</a> that should be supported by this menu, see <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.Builder.html#setEntityTypes(kotlin.collections.MutableCollection)">EntitySelectMenu.Builder.setEntityTypes</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1224952314%2FProperties%2F1205949177" anchor-label="uniqueId" id="-1224952314%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/unique-id.html"><span>unique</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1224952314%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../-inline-select-menu/unique-id.html">uniqueId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Unique identifier of this component, see <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/Component.html#withUniqueId(kotlin.Int)">Component.withUniqueId</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1624554682%2FProperties%2F1205949177" anchor-label="valueRange" id="-1624554682%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-inline-select-menu/value-range.html"><span>value</span><wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1624554682%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-inline-select-menu/value-range.html">valueRange</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.ranges/-int-range/index.html">IntRange</a></div><div class="brief "><p class="paragraph">The minimum and maximum amount of values a user can select, must not exceed <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/SelectMenu.html#OPTIONS_MAX_AMOUNT">SelectMenu.OPTIONS_MAX_AMOUNT</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1345532489%2FFunctions%2F1205949177" anchor-label="build" id="-1345532489%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1345532489%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/selections/EntitySelectMenu.html">EntitySelectMenu</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

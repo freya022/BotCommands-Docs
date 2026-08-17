@@ -1,0 +1,2152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BotCommands-core</title>
+<link href="../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+<link href="../styles/style.css" rel="Stylesheet">
+<link href="../styles/main.css" rel="Stylesheet">
+<link href="../styles/prism.css" rel="Stylesheet">
+<link href="../styles/logo-styles.css" rel="Stylesheet">
+<link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../scripts/main.js" defer></script>
+<script type="text/javascript" src="../scripts/prism.js" async></script>
+<script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageids="BotCommands-core::////PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Bot</span><wbr><span><span>Commands-core</span></span></h1>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="867446017%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api" id="867446017%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api/index.html">io.github.freya022.botcommands.api</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867446017%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1332989641%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.annotations" id="-1332989641%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.annotations/index.html">io.github.freya022.botcommands.api.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1332989641%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-589751079%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands" id="-589751079%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands/index.html">io.github.freya022.botcommands.api.commands</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-589751079%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1431313679%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.annotations" id="1431313679%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.annotations/index.html">io.github.freya022.botcommands.api.commands.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1431313679%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1354565691%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application" id="1354565691%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application/index.html">io.github.freya022.botcommands.api.commands.application</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1354565691%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1579940495%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.annotations" id="-1579940495%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.annotations/index.html">io.github.freya022.botcommands.api.commands.application.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1579940495%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-887476056%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.builder" id="-887476056%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.builder/index.html">io.github.freya022.botcommands.api.commands.application.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-887476056%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-740226702%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.annotations" id="-740226702%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.annotations/index.html">io.github.freya022.botcommands.api.commands.application.context.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-740226702%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1641447787%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.message" id="-1641447787%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.message/index.html">io.github.freya022.botcommands.api.commands.application.context.message</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1641447787%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1749046014%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.message.builder" id="-1749046014%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.message.builder/index.html">io.github.freya022.botcommands.api.commands.application.context.message.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1749046014%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1378437563%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.message.options" id="-1378437563%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.message.options/index.html">io.github.freya022.botcommands.api.commands.application.context.message.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1378437563%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1297233074%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.message.options.builder" id="1297233074%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.message.options.builder/index.html">io.github.freya022.botcommands.api.commands.application.context.message.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1297233074%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2090493548%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.options" id="2090493548%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.options/index.html">io.github.freya022.botcommands.api.commands.application.context.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2090493548%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2112443393%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.user" id="2112443393%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.user/index.html">io.github.freya022.botcommands.api.commands.application.context.user</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112443393%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-977709458%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.user.builder" id="-977709458%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.user.builder/index.html">io.github.freya022.botcommands.api.commands.application.context.user.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-977709458%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-607101007%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.user.options" id="-607101007%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.user.options/index.html">io.github.freya022.botcommands.api.commands.application.context.user.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-607101007%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="745648670%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.context.user.options.builder" id="745648670%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.context.user.options.builder/index.html">io.github.freya022.botcommands.api.commands.application.context.user.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="745648670%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1764608868%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.diff" id="-1764608868%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.diff/index.html">io.github.freya022.botcommands.api.commands.application.diff</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764608868%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-448969189%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.exceptions" id="-448969189%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.exceptions/index.html">io.github.freya022.botcommands.api.commands.application.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-448969189%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-516867605%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.options" id="-516867605%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.options/index.html">io.github.freya022.botcommands.api.commands.application.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-516867605%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1344687528%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.options.builder" id="-1344687528%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.options.builder/index.html">io.github.freya022.botcommands.api.commands.application.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1344687528%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1783341816%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.provider" id="-1783341816%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.provider/index.html">io.github.freya022.botcommands.api.commands.application.provider</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1783341816%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="732490442%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash" id="732490442%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash/index.html">io.github.freya022.botcommands.api.commands.application.slash</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732490442%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1529710976%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.annotations" id="1529710976%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.annotations/index.html">io.github.freya022.botcommands.api.commands.application.slash.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1529710976%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="148335504%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.autocomplete" id="148335504%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.autocomplete/index.html">io.github.freya022.botcommands.api.commands.application.slash.autocomplete</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="148335504%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-537718458%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.annotations" id="-537718458%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.annotations/index.html">io.github.freya022.botcommands.api.commands.application.slash.autocomplete.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537718458%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2061135613%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.builder" id="2061135613%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.builder/index.html">io.github.freya022.botcommands.api.commands.application.slash.autocomplete.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2061135613%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-357290980%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.declaration" id="-357290980%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.autocomplete.declaration/index.html">io.github.freya022.botcommands.api.commands.application.slash.autocomplete.declaration</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-357290980%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-952232905%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.builder" id="-952232905%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.builder/index.html">io.github.freya022.botcommands.api.commands.application.slash.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-952232905%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-581624454%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.options" id="-581624454%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.options/index.html">io.github.freya022.botcommands.api.commands.application.slash.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-581624454%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1503958759%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.application.slash.options.builder" id="1503958759%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.application.slash.options.builder/index.html">io.github.freya022.botcommands.api.commands.application.slash.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1503958759%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1444857670%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.builder" id="1444857670%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.builder/index.html">io.github.freya022.botcommands.api.commands.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1444857670%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1815466121%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.options" id="1815466121%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.options/index.html">io.github.freya022.botcommands.api.commands.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1815466121%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1843082506%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.options.builder" id="-1843082506%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.options.builder/index.html">io.github.freya022.botcommands.api.commands.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1843082506%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="724685894%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.ratelimit" id="724685894%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.ratelimit/index.html">io.github.freya022.botcommands.api.commands.ratelimit</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="724685894%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-258300266%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.ratelimit.bucket" id="-258300266%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.ratelimit.bucket/index.html">io.github.freya022.botcommands.api.commands.ratelimit.bucket</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-258300266%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="567882706%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.ratelimit.declaration" id="567882706%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.ratelimit.declaration/index.html">io.github.freya022.botcommands.api.commands.ratelimit.declaration</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="567882706%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-706552670%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.ratelimit.handler" id="-706552670%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.ratelimit.handler/index.html">io.github.freya022.botcommands.api.commands.ratelimit.handler</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-706552670%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-512955930%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text" id="-512955930%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text/index.html">io.github.freya022.botcommands.api.commands.text</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-512955930%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="507494044%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.annotations" id="507494044%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.annotations/index.html">io.github.freya022.botcommands.api.commands.text.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="507494044%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1812936531%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.builder" id="1812936531%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.builder/index.html">io.github.freya022.botcommands.api.commands.text.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1812936531%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1490011248%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.exceptions" id="-1490011248%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.exceptions/index.html">io.github.freya022.botcommands.api.commands.text.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1490011248%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2111422314%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.options" id="-2111422314%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.options/index.html">io.github.freya022.botcommands.api.commands.text.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2111422314%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="807329283%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.options.builder" id="807329283%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.options.builder/index.html">io.github.freya022.botcommands.api.commands.text.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="807329283%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="325069757%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.commands.text.provider" id="325069757%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.commands.text.provider/index.html">io.github.freya022.botcommands.api.commands.text.provider</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="325069757%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-114180057%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components" id="-114180057%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components/index.html">io.github.freya022.botcommands.api.components</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-114180057%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-961004707%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.annotations" id="-961004707%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.annotations/index.html">io.github.freya022.botcommands.api.components.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961004707%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1509833876%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder" id="1509833876%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder/index.html">io.github.freya022.botcommands.api.components.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1509833876%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1957641680%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder.button" id="1957641680%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder.button/index.html">io.github.freya022.botcommands.api.components.builder.button</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1957641680%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1612091675%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder.group" id="-1612091675%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder.group/index.html">io.github.freya022.botcommands.api.components.builder.group</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612091675%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-832748774%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder.select" id="-832748774%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder.select/index.html">io.github.freya022.botcommands.api.components.builder.select</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832748774%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-842883703%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder.select.ephemeral" id="-842883703%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder.select.ephemeral/index.html">io.github.freya022.botcommands.api.components.builder.select.ephemeral</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-842883703%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1065405615%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.builder.select.persistent" id="1065405615%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.builder.select.persistent/index.html">io.github.freya022.botcommands.api.components.builder.select.persistent</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065405615%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1295417451%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.data" id="-1295417451%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.data/index.html">io.github.freya022.botcommands.api.components.data</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1295417451%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2001602413%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.event" id="-2001602413%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.event/index.html">io.github.freya022.botcommands.api.components.event</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2001602413%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1095017135%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.exceptions" id="1095017135%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.exceptions/index.html">io.github.freya022.botcommands.api.components.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1095017135%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1880442327%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.options" id="1880442327%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.options/index.html">io.github.freya022.botcommands.api.components.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1880442327%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1257689580%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.ratelimit" id="-1257689580%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.ratelimit/index.html">io.github.freya022.botcommands.api.components.ratelimit</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1257689580%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="629623657%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.serialization" id="629623657%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.serialization/index.html">io.github.freya022.botcommands.api.components.serialization</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="629623657%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1109593185%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.serialization.annotations" id="-1109593185%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.serialization.annotations/index.html">io.github.freya022.botcommands.api.components.serialization.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1109593185%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-295249363%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.serialization.exceptions" id="-295249363%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.serialization.exceptions/index.html">io.github.freya022.botcommands.api.components.serialization.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-295249363%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1103007350%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.timeout.options" id="-1103007350%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.timeout.options/index.html">io.github.freya022.botcommands.api.components.timeout.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1103007350%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1613862890%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.components.utils" id="1613862890%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.components.utils/index.html">io.github.freya022.botcommands.api.components.utils</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1613862890%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1103162704%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core" id="-1103162704%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core/index.html">io.github.freya022.botcommands.api.core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1103162704%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-59176858%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.annotations" id="-59176858%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.annotations/index.html">io.github.freya022.botcommands.api.core.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-59176858%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1439148998%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.conditions" id="-1439148998%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.conditions/index.html">io.github.freya022.botcommands.api.core.conditions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1439148998%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-289015740%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.config" id="-289015740%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.config/index.html">io.github.freya022.botcommands.api.core.config</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-289015740%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-903527622%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.config.application.cache" id="-903527622%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.config.application.cache/index.html">io.github.freya022.botcommands.api.core.config.application.cache</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-903527622%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-620003712%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.db" id="-620003712%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.db/index.html">io.github.freya022.botcommands.api.core.db</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-620003712%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-713933770%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.db.annotations" id="-713933770%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.db.annotations/index.html">io.github.freya022.botcommands.api.core.db.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-713933770%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="65403098%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.db.query" id="65403098%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.db.query/index.html">io.github.freya022.botcommands.api.core.db.query</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="65403098%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-820190205%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.entities" id="-820190205%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.entities/index.html">io.github.freya022.botcommands.api.core.entities</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-820190205%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-558291109%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.events" id="-558291109%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.events/index.html">io.github.freya022.botcommands.api.core.events</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-558291109%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-954101626%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.exceptions" id="-954101626%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.exceptions/index.html">io.github.freya022.botcommands.api.core.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-954101626%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1770778098%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.hooks" id="1770778098%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.hooks/index.html">io.github.freya022.botcommands.api.core.hooks</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1770778098%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="888960462%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.messages" id="888960462%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.messages/index.html">io.github.freya022.botcommands.api.core.messages</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="888960462%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1107930792%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.messages.exceptions" id="1107930792%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.messages.exceptions/index.html">io.github.freya022.botcommands.api.core.messages.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107930792%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="475004768%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.options" id="475004768%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.options/index.html">io.github.freya022.botcommands.api.core.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="475004768%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2036568810%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.options.annotations" id="-2036568810%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.options.annotations/index.html">io.github.freya022.botcommands.api.core.options.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2036568810%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1504326349%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.options.builder" id="1504326349%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.options.builder/index.html">io.github.freya022.botcommands.api.core.options.builder</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1504326349%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-599370049%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.reflect" id="-599370049%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.reflect/index.html">io.github.freya022.botcommands.api.core.reflect</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-599370049%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="258452981%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.reflect.annotations" id="258452981%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.reflect.annotations/index.html">io.github.freya022.botcommands.api.core.reflect.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="258452981%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1900204474%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.requests" id="-1900204474%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.requests/index.html">io.github.freya022.botcommands.api.core.requests</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1900204474%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1522155337%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.service" id="-1522155337%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.service/index.html">io.github.freya022.botcommands.api.core.service</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1522155337%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="511697901%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.service.annotations" id="511697901%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.service.annotations/index.html">io.github.freya022.botcommands.api.core.service.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511697901%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1974411187%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.utils" id="1974411187%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.utils/index.html">io.github.freya022.botcommands.api.core.utils</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1974411187%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1611055588%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.core.waiter" id="1611055588%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.core.waiter/index.html">io.github.freya022.botcommands.api.core.waiter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1611055588%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1422313150%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.emojis" id="1422313150%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.emojis/index.html">io.github.freya022.botcommands.api.emojis</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422313150%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="742201204%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.emojis.annotations" id="742201204%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.emojis.annotations/index.html">io.github.freya022.botcommands.api.emojis.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="742201204%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-96966728%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.emojis.exceptions" id="-96966728%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.emojis.exceptions/index.html">io.github.freya022.botcommands.api.emojis.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-96966728%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1641634262%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization" id="-1641634262%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization/index.html">io.github.freya022.botcommands.api.localization</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1641634262%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="554513632%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.annotations" id="554513632%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.annotations/index.html">io.github.freya022.botcommands.api.localization.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554513632%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1522817262%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.arguments" id="-1522817262%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.arguments/index.html">io.github.freya022.botcommands.api.localization.arguments</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1522817262%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1084920140%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.arguments.factories" id="1084920140%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.arguments.factories/index.html">io.github.freya022.botcommands.api.localization.arguments.factories</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1084920140%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="966231211%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.context" id="966231211%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.context/index.html">io.github.freya022.botcommands.api.localization.context</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="966231211%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1187355214%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.interaction" id="1187355214%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.interaction/index.html">io.github.freya022.botcommands.api.localization.interaction</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1187355214%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2031886174%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.providers" id="2031886174%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.providers/index.html">io.github.freya022.botcommands.api.localization.providers</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2031886174%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1317332940%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.readers" id="1317332940%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.readers/index.html">io.github.freya022.botcommands.api.localization.readers</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1317332940%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="979733301%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.localization.text" id="979733301%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.localization.text/index.html">io.github.freya022.botcommands.api.localization.text</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="979733301%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="391316471%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.modals" id="391316471%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.modals/index.html">io.github.freya022.botcommands.api.modals</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="391316471%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-796768467%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.modals.annotations" id="-796768467%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.modals.annotations/index.html">io.github.freya022.botcommands.api.modals.annotations</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-796768467%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1931599071%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.modals.exceptions" id="1931599071%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.modals.exceptions/index.html">io.github.freya022.botcommands.api.modals.exceptions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1931599071%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1037941159%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.modals.options" id="1037941159%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.modals.options/index.html">io.github.freya022.botcommands.api.modals.options</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1037941159%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="835327915%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination" id="835327915%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination/index.html">io.github.freya022.botcommands.api.pagination</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835327915%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1756066216%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.custom" id="-1756066216%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.custom/index.html">io.github.freya022.botcommands.api.pagination.custom</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1756066216%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-254806010%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.menu" id="-254806010%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.menu/index.html">io.github.freya022.botcommands.api.pagination.menu</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-254806010%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1537876562%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.menu.buttonized" id="-1537876562%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.menu.buttonized/index.html">io.github.freya022.botcommands.api.pagination.menu.buttonized</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1537876562%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1048299919%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.menu.transformer" id="-1048299919%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.menu.transformer/index.html">io.github.freya022.botcommands.api.pagination.menu.transformer</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1048299919%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1227429794%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.nested" id="-1227429794%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.nested/index.html">io.github.freya022.botcommands.api.pagination.nested</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1227429794%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-179871154%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.pagination.paginator" id="-179871154%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.pagination.paginator/index.html">io.github.freya022.botcommands.api.pagination.paginator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-179871154%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-89825797%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.parameters" id="-89825797%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.parameters/index.html">io.github.freya022.botcommands.api.parameters</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-89825797%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="379071162%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.parameters.resolvers" id="379071162%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.parameters.resolvers/index.html">io.github.freya022.botcommands.api.parameters.resolvers</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="379071162%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1581349188%2FPackages%2F1100755421" anchor-label="io.github.freya022.botcommands.api.utils" id="1581349188%2FPackages%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="io.github.freya022.botcommands.api.utils/index.html">io.github.freya022.botcommands.api.utils</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1581349188%2FPackages%2F1100755421"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

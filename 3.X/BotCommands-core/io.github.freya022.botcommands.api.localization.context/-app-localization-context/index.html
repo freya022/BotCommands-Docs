@@ -1,0 +1,475 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AppLocalizationContext</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.localization.context/AppLocalizationContext///PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.localization.context</a><span class="delimiter">/</span><span class="current">AppLocalizationContext</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>App</span><wbr><span>Localization</span><wbr><span><span>Context</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">AppLocalizationContext</a> : <a href="../-text-localization-context/index.html">TextLocalizationContext</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/localization/context/AppLocalizationContext.kt#L32">source</a>)</span></span></div><p class="paragraph">Interface helping in localizing content, supports preset localization bundles, localization prefixes, and context-aware localization.</p><h3 class="">User and guild locales</h3><p class="paragraph">The user and guild locales are set by <a href="../../io.github.freya022.botcommands.api.localization.interaction/-user-locale-provider/index.html">UserLocaleProvider</a> (by default <a href="../../io.github.freya022.botcommands.api.modals/-modal-event/index.html#199119597%2FFunctions%2F1100755421">Interaction.getUserLocale</a>), and <a href="../../io.github.freya022.botcommands.api.localization.interaction/-guild-locale-provider/index.html">GuildLocaleProvider</a> (by default <a href="../../io.github.freya022.botcommands.api.modals/-modal-event/index.html#-1564979909%2FFunctions%2F1100755421">Interaction.getGuildLocale</a>) respectively.</p><p class="paragraph">You can implement your own locale provider to change the locales used by this localization context.</p><h3 class="">Manual usage</h3><p class="paragraph">While instances of this interface are primarily injected with <a href="../../io.github.freya022.botcommands.api.localization.annotations/-localization-bundle/index.html">@LocalizationBundle</a>, you can also construct instances of this interface with <a href="../-localization-context/-companion/builder.html">LocalizationContext.builder</a>.</p><p class="paragraph">Instances are only injectable if the event is a subclass of <a href="https://docs.jda.wiki/net/dv8tion/jda/api/interactions/Interaction.html">Interaction</a>.</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="user-locale.html"><span>user</span><wbr><span><span>Locale</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-text-localization-context/guild-locale.html"><span>guild</span><wbr><span><span>Locale</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-localization-context/-companion/builder.html"><span>Localization</span><wbr><span>Context.</span><wbr><span>builder</span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1823711355%2FProperties%2F1100755421" anchor-label="effectiveLocale" id="1823711355%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/effective-locale.html"><span>effective</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1823711355%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="../-localization-context/effective-locale.html">effectiveLocale</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a></div><div class="brief "><p class="paragraph">The locale used when no locale is specified, the best locale is picked in this order:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="109524860%2FProperties%2F1100755421" anchor-label="guildLocale" id="109524860%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-text-localization-context/guild-locale.html"><span>guild</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="109524860%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="../-text-localization-context/guild-locale.html">guildLocale</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a></div><div class="brief "><p class="paragraph">Returns the <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a> of the guild.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-31831357%2FProperties%2F1100755421" anchor-label="localizationBundle" id="-31831357%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/localization-bundle.html"><span>localization</span><wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-31831357%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="../-localization-context/localization-bundle.html">localizationBundle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns the localization bundle of the current context.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="97532595%2FProperties%2F1100755421" anchor-label="localizationPrefix" id="97532595%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/localization-prefix.html"><span>localization</span><wbr><span><span>Prefix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97532595%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="../-localization-context/localization-prefix.html">localizationPrefix</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The prefix to add to every localization request.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-16281052%2FProperties%2F1100755421" anchor-label="userLocale" id="-16281052%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-locale.html"><span>user</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-16281052%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="user-locale.html">userLocale</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a></div><div class="brief "><p class="paragraph">Returns the Locale of the user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="604196638%2FFunctions%2F1100755421" anchor-label="hasGuildLocale" id="604196638%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-text-localization-context/has-guild-locale.html"><span>has</span><wbr><span>Guild</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="604196638%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-text-localization-context/has-guild-locale.html"><span class="token function">hasGuildLocale</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this localization context has a Guild locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="629356797%2FFunctions%2F1100755421" anchor-label="localize" id="629356797%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/localize.html"><span><span>localize</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="629356797%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-localization-context/localize.html"><span class="token function">localize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the <a href="../-localization-context/effective-locale.html">best locale</a> available.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-localization-context/localize.html"><span class="token function">localize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the provided locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2099857277%2FFunctions%2F1100755421" anchor-label="localize" id="2099857277%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize.html"><span><span>localize</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2099857277%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-localization-context/index.html">LocalizationContext</a><span class="token punctuation">.</span><a href="../localize.html"><span class="token function">localize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the <a href="../-localization-context/effective-locale.html">best locale</a> available.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-localization-context/index.html">LocalizationContext</a><span class="token punctuation">.</span><a href="../localize.html"><span class="token function">localize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the provided locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2007777971%2FFunctions%2F1100755421" anchor-label="localizeGuild" id="-2007777971%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-text-localization-context/localize-guild.html"><span>localize</span><wbr><span><span>Guild</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2007777971%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-text-localization-context/localize-guild.html"><span class="token function">localizeGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the guild's locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="142314685%2FFunctions%2F1100755421" anchor-label="localizeGuild" id="142314685%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize-guild.html"><span>localize</span><wbr><span><span>Guild</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="142314685%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-text-localization-context/index.html">TextLocalizationContext</a><span class="token punctuation">.</span><a href="../localize-guild.html"><span class="token function">localizeGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the guild's locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="8807139%2FFunctions%2F1100755421" anchor-label="localizeGuildOrNull" id="8807139%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-text-localization-context/localize-guild-or-null.html"><span>localize</span><wbr><span>Guild</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="8807139%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-text-localization-context/localize-guild-or-null.html"><span class="token function">localizeGuildOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the guild's locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2082481939%2FFunctions%2F1100755421" anchor-label="localizeGuildOrNull" id="2082481939%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize-guild-or-null.html"><span>localize</span><wbr><span>Guild</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2082481939%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-text-localization-context/index.html">TextLocalizationContext</a><span class="token punctuation">.</span><a href="../localize-guild-or-null.html"><span class="token function">localizeGuildOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the guild's locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="419515689%2FFunctions%2F1100755421" anchor-label="localizeOrNull" id="419515689%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/localize-or-null.html"><span>localize</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="419515689%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-localization-context/localize-or-null.html"><span class="token function">localizeOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the <a href="../-localization-context/effective-locale.html">best locale</a> available, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-localization-context/localize-or-null.html"><span class="token function">localizeOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the provided locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-9163331%2FFunctions%2F1100755421" anchor-label="localizeOrNull" id="-9163331%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize-or-null.html"><span>localize</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-9163331%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-localization-context/index.html">LocalizationContext</a><span class="token punctuation">.</span><a href="../localize-or-null.html"><span class="token function">localizeOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the <a href="../-localization-context/effective-locale.html">best locale</a> available, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="../-localization-context/index.html">LocalizationContext</a><span class="token punctuation">.</span><a href="../localize-or-null.html"><span class="token function">localizeOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the provided locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1924327939%2FFunctions%2F1100755421" anchor-label="localizeUser" id="1924327939%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="localize-user.html"><span>localize</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1924327939%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="localize-user.html"><span class="token function">localizeUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the user's locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="73967975%2FFunctions%2F1100755421" anchor-label="localizeUser" id="73967975%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize-user.html"><span>localize</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="73967975%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">AppLocalizationContext</a><span class="token punctuation">.</span><a href="../localize-user.html"><span class="token function">localizeUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Localizes the provided path, with the user's locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1786597607%2FFunctions%2F1100755421" anchor-label="localizeUserOrNull" id="-1786597607%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="localize-user-or-null.html"><span>localize</span><wbr><span>User</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1786597607%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="localize-user-or-null.html"><span class="token function">localizeUserOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the user's locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1622822737%2FFunctions%2F1100755421" anchor-label="localizeUserOrNull" id="1622822737%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../localize-user-or-null.html"><span>localize</span><wbr><span>User</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1622822737%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">AppLocalizationContext</a><span class="token punctuation">.</span><a href="../localize-user-or-null.html"><span class="token function">localizeUserOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>entries<span class="token operator">: </span><a href="../-pair-entry/index.html">PairEntry</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Localizes the provided path, with the user's locale, or returns <code class="lang-kotlin">null</code> if the path does not exist.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1262185871%2FFunctions%2F1100755421" anchor-label="switchBundle" id="-1262185871%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="switch-bundle.html"><span>switch</span><wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1262185871%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="switch-bundle.html"><span class="token function">switchBundle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationBundle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AppLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a new localization context with the specified localization bundle, and resets the localization prefix.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="632411651%2FFunctions%2F1100755421" anchor-label="withBundle" id="632411651%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-bundle.html"><span>with</span><wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="632411651%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="with-bundle.html"><span class="token function">withBundle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationBundle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AppLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a new localization context with the specified localization bundle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1309566835%2FFunctions%2F1100755421" anchor-label="withGuildLocale" id="1309566835%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-guild-locale.html"><span>with</span><wbr><span>Guild</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1309566835%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="with-guild-locale.html"><span class="token function">withGuildLocale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildLocale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AppLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a new <a href="../-text-localization-context/index.html">TextLocalizationContext</a> with the specified guild locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-890417872%2FFunctions%2F1100755421" anchor-label="withPrefix" id="-890417872%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-prefix.html"><span>with</span><wbr><span><span>Prefix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-890417872%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="with-prefix.html"><span class="token function">withPrefix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AppLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a new localization context with the specified localization prefix.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-159403766%2FFunctions%2F1100755421" anchor-label="withUserLocale" id="-159403766%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-localization-context/with-user-locale.html"><span>with</span><wbr><span>User</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-159403766%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-localization-context/with-user-locale.html"><span class="token function">withUserLocale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userLocale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">AppLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a new <a href="index.html">AppLocalizationContext</a> with the specified user locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

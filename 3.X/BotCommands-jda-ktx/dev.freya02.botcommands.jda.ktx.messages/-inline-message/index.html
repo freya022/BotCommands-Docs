@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InlineMessage</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-jda-ktx/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-jda-ktx/main" data-filter=":BotCommands-jda-ktx/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-jda-ktx::dev.freya02.botcommands.jda.ktx.messages/InlineMessage///PointingToDeclaration//1205949177">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-jda-ktx</a><span class="delimiter">/</span><a href="../index.html">dev.freya02.botcommands.jda.ktx.messages</a><span class="delimiter">/</span><span class="current">InlineMessage</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Inline</span><wbr><span><span>Message</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../BotCommands-jda-ktx/dev.freya02.botcommands.jda.ktx.messages/-message-builder-d-s-l/index.html"><span class="token annotation builtin">MessageBuilderDSL</span></a></div></div><span class="token keyword">class </span><a href="index.html">InlineMessage</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>builder<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/messages/AbstractMessageBuilder.html">AbstractMessageBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-jda-ktx/src/main/kotlin/dev/freya02/botcommands/jda/ktx/messages/Messages.kt#L175">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-754216785%2FConstructors%2F1205949177" anchor-label="InlineMessage" id="-754216785%2FConstructors%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-inline-message.html"><span>Inline</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-754216785%2FConstructors%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/messages/AbstractMessageBuilder.html">AbstractMessageBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="2002790677%2FClasslikes%2F1205949177" anchor-label="InlineMentions" id="2002790677%2FClasslikes%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-inline-mentions/index.html"><span>Inline</span><wbr><span><span>Mentions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2002790677%2FClasslikes%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../BotCommands-jda-ktx/dev.freya02.botcommands.jda.ktx.messages/-message-builder-d-s-l/index.html"><span class="token annotation builtin">MessageBuilderDSL</span></a></div></div><span class="token keyword">class </span><a href="-inline-mentions/index.html">InlineMentions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1328340257%2FProperties%2F1205949177" anchor-label="allowedMentionTypes" id="1328340257%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allowed-mention-types.html"><span>allowed</span><wbr><span>Mention</span><wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1328340257%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="allowed-mention-types.html">allowedMentionTypes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Message.MentionType.html">Message.MentionType</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1706960125%2FProperties%2F1205949177" anchor-label="builder" id="1706960125%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="builder.html"><span><span>builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1706960125%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="builder.html">builder</a><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/messages/AbstractMessageBuilder.html">AbstractMessageBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1901974284%2FProperties%2F1205949177" anchor-label="components" id="1901974284%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="components.html"><span><span>components</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1901974284%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="components.html">components</a><span class="token operator">: </span><a href="../-accumulator/index.html">Accumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/MessageTopLevelComponent.html">MessageTopLevelComponent</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1229621793%2FProperties%2F1205949177" anchor-label="content" id="-1229621793%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="content.html"><span><span>content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1229621793%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="content.html">content</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="826983528%2FProperties%2F1205949177" anchor-label="embeds" id="826983528%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="embeds.html"><span><span>embeds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="826983528%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="embeds.html">embeds</a><span class="token operator">: </span><a href="../-accumulator/index.html">Accumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/MessageEmbed.html">MessageEmbed</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1541870495%2FProperties%2F1205949177" anchor-label="files" id="-1541870495%2FProperties%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="files.html"><span><span>files</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1541870495%2FProperties%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="files.html">files</a><span class="token operator">: </span><a href="../-accumulator/index.html">Accumulator</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/AttachedFile.html">AttachedFile</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1289684216%2FFunctions%2F1205949177" anchor-label="actionRow" id="-1289684216%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="action-row.html"><span>action</span><wbr><span><span>Row</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1289684216%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="action-row.html"><span class="token function">actionRow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">components<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/actionrow/ActionRowChildComponent.html">ActionRowChildComponent</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-action-row/index.html">InlineActionRow</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="action-row.html"><span class="token function">actionRow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>components<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/actionrow/ActionRowChildComponent.html">ActionRowChildComponent</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-action-row/index.html">InlineActionRow</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/actionrow/ActionRow.html">ActionRow</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="875394122%2FFunctions%2F1205949177" anchor-label="build" id="875394122%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="875394122%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-41689366%2FFunctions%2F1205949177" anchor-label="container" id="-41689366%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="container.html"><span><span>container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-41689366%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="container.html"><span class="token function">container</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">components<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/container/ContainerChildComponent.html">ContainerChildComponent</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">accentColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">spoiler<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-container/index.html">InlineContainer</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="container.html"><span class="token function">container</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>components<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/container/ContainerChildComponent.html">ContainerChildComponent</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">accentColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">spoiler<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-container/index.html">InlineContainer</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/container/Container.html">Container</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1534119330%2FFunctions%2F1205949177" anchor-label="embed" id="-1534119330%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="embed.html"><span><span>embed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1534119330%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="embed.html"><span class="token function">embed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">embed<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/MessageEmbed.html">MessageEmbed</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">builder<span class="token operator">: </span><a href="../-inline-embed/index.html">InlineEmbed</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-378976252%2FFunctions%2F1205949177" anchor-label="fileDisplay" id="-378976252%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-display.html"><span>file</span><wbr><span><span>Display</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-378976252%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="file-display.html"><span class="token function">fileDisplay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">spoiler<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-file-display/index.html">InlineFileDisplay</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/filedisplay/FileDisplay.html#fromFileName(kotlin.String)">FileDisplay.fromFileName</a>.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="file-display.html"><span class="token function">fileDisplay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/FileUpload.html">FileUpload</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">spoiler<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-file-display/index.html">InlineFileDisplay</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/filedisplay/FileDisplay.html#fromFile(net.dv8tion.jda.api.utils.FileUpload)">FileDisplay.fromFile</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1461236368%2FFunctions%2F1205949177" anchor-label="mediaGallery" id="1461236368%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="media-gallery.html"><span>media</span><wbr><span><span>Gallery</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1461236368%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="media-gallery.html"><span class="token function">mediaGallery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/mediagallery/MediaGalleryItem.html">MediaGalleryItem</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-media-gallery/index.html">InlineMediaGallery</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="media-gallery.html"><span class="token function">mediaGallery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>items<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/mediagallery/MediaGalleryItem.html">MediaGalleryItem</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-media-gallery/index.html">InlineMediaGallery</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/mediagallery/MediaGallery.html">MediaGallery</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1325091043%2FFunctions%2F1205949177" anchor-label="mentions" id="-1325091043%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mentions.html"><span><span>mentions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1325091043%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="mentions.html"><span class="token function">mentions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="-inline-mentions/index.html">InlineMessage.InlineMentions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2097906848%2FFunctions%2F1205949177" anchor-label="section" id="2097906848%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="section.html"><span><span>section</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2097906848%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="section.html"><span class="token function">section</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">accessory<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/section/SectionAccessoryComponent.html">SectionAccessoryComponent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">components<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/section/SectionContentComponent.html">SectionContentComponent</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-section/index.html">InlineSection</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="section.html"><span class="token function">section</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">accessory<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/section/SectionAccessoryComponent.html">SectionAccessoryComponent</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>components<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/section/SectionContentComponent.html">SectionContentComponent</a><span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-section/index.html">InlineSection</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/section/Section.html">Section</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="936005504%2FFunctions%2F1205949177" anchor-label="separator" id="936005504%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="separator.html"><span><span>separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="936005504%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="separator.html"><span class="token function">separator</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">isDivider<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">spacing<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/separator/Separator.Spacing.html">Separator.Spacing</a><span class="token operator"> = </span>Separator.Spacing.SMALL<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-separator/index.html">InlineSeparator</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/separator/Separator.html">Separator</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-394888774%2FFunctions%2F1205949177" anchor-label="text" id="-394888774%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text.html"><span><span>text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-394888774%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="text.html"><span class="token function">text</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">content<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">uniqueId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../../dev.freya02.botcommands.jda.ktx.components/-inline-text-display/index.html">InlineTextDisplay</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">See <a href="https://docs.jda.wiki/net/dv8tion/jda/api/components/textdisplay/TextDisplay.html">TextDisplay</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BService</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.core.service.annotations/BService///PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.core.service.annotations</a><span class="delimiter">/</span><span class="current">BService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>BService</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.stereotype/Component///PointingToDeclaration/"><span class="token annotation builtin">Component</span></span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-annotation-target/-f-u-n-c-t-i-o-n/index.html">AnnotationTarget.FUNCTION</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-annotation-target/-p-r-o-p-e-r-t-y_-g-e-t-t-e-r/index.html">AnnotationTarget.PROPERTY_GETTER</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-annotation-target/-a-n-n-o-t-a-t-i-o-n_-c-l-a-s-s/index.html">AnnotationTarget.ANNOTATION_CLASS</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="index.html">BService</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>priority<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/core/service/annotations/BService.kt#L117">source</a>)</span></span></div><p class="paragraph">Marks this class as a service, or this function as a service factory. Can be added on your own annotation.</p><p class="paragraph">Service factories must be static, or declared in a service class, or an <code class="lang-kotlin">object</code>.</p><p class="paragraph"><strong>Warning:</strong> Top-level functions are not processed, you must have them in an object/class.</p><h3 class="">Service retrieval</h3><p class="paragraph">Classes annotated with <a href="index.html">@BService</a> (either directly or via an intermediary annotation) can be retrieved.</p><p class="paragraph">In most cases, the services you retrieve will be type-matched, however, here is how they are looked up:</p><ul><li><p class="paragraph">If <a href="../-service-name/index.html">@ServiceName</a> is used: Finds a service with the same name and satisfying type.</p></li><li><p class="paragraph">If a parameter name is available (native in Kotlin, requires the <code class="lang-kotlin">-parameters</code> compiler arg in Java): Finds a service with the same name and a satisfying type.</p></li><li><p class="paragraph">In other cases, a service with a satisfying type will be returned.</p></li></ul><h4 class="">Primary providers</h4><p class="paragraph">When requesting a service of a specific type, there must be at most one service provider for such a type.</p><p class="paragraph">If multiple <strong>usable</strong> providers for the same type are present, no service can be returned unless <i>one</i> <a href="../-primary/index.html">primary</a> provider is defined.</p><p class="paragraph">For example, if you have two service factories with the same return type:</p><ul><li><p class="paragraph">✗ If both are usable</p></li><li><p class="paragraph">✓ One has a failing condition, meaning you have one usable provider</p></li><li><p class="paragraph">✓ One is annotated with <a href="../-primary/index.html">@Primary</a>, in which case this one is prioritized</p></li></ul><p class="paragraph"><strong>Note:</strong> You can still get all the <a href="../../io.github.freya022.botcommands.api.core.service/-service-container/get-interfaced-service-types.html">types</a> / <a href="../../io.github.freya022.botcommands.api.core.service/-service-container/get-interfaced-services.html">instances</a>.</p><h4 class="">Service types</h4><p class="paragraph">Registered services cannot be retrieved by every type they represent, i.e., they can only be retrieved by the types they are explicitly registered as:</p><ul><li><p class="paragraph">Classes annotated as services are registered with the class type.</p></li><li><p class="paragraph">Service factories (including property getters) register their returned services as the function's return type.</p></li></ul><p class="paragraph">In both cases, supertypes can be added using <a href="../-service-type/index.html">@ServiceType</a></p><p class="paragraph">Using service factories, if your function creates an implementation class, but returns the abstract class/interface, the service will only be retrievable by the latter.</p><p class="paragraph"><strong>Note:</strong> Annotated functions in subclasses of services returned by service factories cannot be processed. For example, if you have a <a href="../../io.github.freya022.botcommands.api.core.annotations/-b-event-listener/index.html">@BEventListener</a> in your implementation class, but your service factory returns the abstract class/interface, then your listener will <strong>not</strong> work.</p><h4 class="">Interfaced services</h4><p class="paragraph">Request a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a> will retrieve all services implementing the list's element type, such as <code class="lang-kotlin">List&lt;ApplicationCommandFilter&lt;*&gt;&gt;</code>.</p><h4 class="">Lazy services</h4><p class="paragraph">In Kotlin, you can request a <a href="../../io.github.freya022.botcommands.api.core.service/-service-container/index.html">ServiceContainer</a> and use a delegated property, such as <code class="lang-kotlin">private val helpCommand: IHelpCommand by serviceContainer.lazy()</code>.</p><p class="paragraph">In both Kotlin and Java, you can request a <a href="../../io.github.freya022.botcommands.api.core.service/-lazy-service/index.html">LazyService</a> with the requested service type and get the value with <a href="../../../BotCommands-core/io.github.freya022.botcommands.api.core.service/-lazy-service/value.html">LazyService.getValue()</a>.</p><p class="paragraph"><strong>Note:</strong> Lazy services cannot hold a list of interfaced services, nor can a list of lazy services be requested.</p><h4 class="">Optional services</h4><p class="paragraph">If you want to get a service only if it is available, you can use Kotlin's <a href="https://kotlinlang.org/docs/null-safety.html">nullable</a> / <a href="https://kotlinlang.org/docs/functions.html#default-arguments">optional</a> parameters, but Java users will need a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.annotation/-annotation-retention/-r-u-n-t-i-m-e/index.html">runtime-retained</a> @Nullable annotation (such as <span data-unresolved-link="javax.annotation/Nullable///PointingToDeclaration/">javax.annotation.Nullable</span>, or, in checker-framework or JSpecify) or <a href="../../io.github.freya022.botcommands.api.commands.annotations/-optional/index.html">@Optional</a>.</p><p class="paragraph">Lazy services can also have their element type be marked as nullable, for example, <code class="lang-kotlin">Lazy&lt;@Nullable IHelpCommand&gt;</code>.</p><p class="paragraph">If a service is not available and the parameter is required, an exception will be thrown.</p><h3 class="">Naming scheme</h3><p class="paragraph">By default, the services are named as such:</p><ul><li><p class="paragraph">For classes, the class's <i>nested</i> name but with the first letter lowercase. (e.g., a <code class="lang-kotlin">ChannelResolver</code> inside a <code class="lang-kotlin">ChannelResolverFactory</code> =&gt;<code class="lang-kotlin">channelResolverFactory.ChannelResolver</code>)</p></li><li><p class="paragraph">For methods, the method's name.</p></li></ul><h3 class="">Loading order</h3><p class="paragraph">By default, the service is eagerly loaded at startup, when it is in the <a href="../../io.github.freya022.botcommands.api.core.config/-b-config-builder/add-search-path.html">framework's classpath</a>, but you can make the service loaded only when requested, by using <a href="../-lazy/index.html">@Lazy</a>.</p><p class="paragraph"><strong>Note:</strong> The service can be loaded early if it has an event listener, is a command, autocomplete, a modal handler, etc...</p><p class="paragraph"><strong>Note 2:</strong> Service factories are prioritized over class annotations, see <a href="../-service-priority/index.html">ServicePriority</a> for more details.</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-injected-service/index.html"><span>Injected</span><wbr><span><span>Service</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@InjectedService</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-conditional-service/index.html"><span>Conditional</span><wbr><span><span>Service</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@ConditionalService</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-interfaced-service/index.html"><span>Interfaced</span><wbr><span><span>Service</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@InterfacedService</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-dependencies/index.html"><span><span>Dependencies</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@Dependencies</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-lazy/index.html"><span><span>Lazy</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@Lazy</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-primary/index.html"><span><span>Primary</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@Primary</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-service-type/index.html"><span>Service</span><wbr><span><span>Type</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@ServiceType</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-service-name/index.html"><span>Service</span><wbr><span><span>Name</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@ServiceName</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-service-priority/index.html"><span>Service</span><wbr><span><span>Priority</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@ServicePriority</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1821998682%2FProperties%2F1100755421" anchor-label="name" id="1821998682%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1821998682%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The unique name of this service.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-360457887%2FProperties%2F1100755421" anchor-label="priority" id="-360457887%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="priority.html"><span><span>priority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360457887%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="priority.html">priority</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><p class="paragraph">The priority of this service.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JDAService</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.core/JDAService///PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.core</a><span class="delimiter">/</span><span class="current">JDAService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>JDAService</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span class="token annotation builtin">InterfacedService</span></a><span class="token punctuation">(</span><span>acceptMultiple<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="../../io.github.freya022.botcommands.api.core.service.annotations/-missing-service-message/index.html"><span class="token annotation builtin">MissingServiceMessage</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"A service extending JDAService must exist and has to be in the search path"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">JDAService</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/core/JDAService.kt#L72">source</a>)</span></span></div><p class="paragraph">Interfaced service to be implemented by the service which creates a JDA instance.</p><p class="paragraph">This has many advantages:</p><ul><li><p class="paragraph">Checking gateway intents, cache flags, and member cache requirements for event listeners and event waiters</p></li><li><p class="paragraph">Conditionally enabling services based on gateway intents (<a href="../../io.github.freya022.botcommands.api.core.conditions/-required-intents/index.html">@RequiredIntents</a>), cache flags, and member cache</p></li><li><p class="paragraph">Starting JDA when every other service is ready</p></li></ul><h3 class="">Usage</h3><p class="paragraph">Register your instance as a service with <a href="../../io.github.freya022.botcommands.api.core.service.annotations/-b-service/index.html">@BService</a>.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang-kt" theme="idea">@BService<br>class Bot(private val config: Config) : JDAService() {<br>    // Default intents + MESSAGE_CONTENT<br>    override val intents: Set&lt;GatewayIntent&gt; = defaultIntents(GatewayIntent.MESSAGE_CONTENT)<br><br>    override val cacheFlags: Set&lt;CacheFlag&gt; = enumSetOf()<br><br>    override fun createJDA(event: BReadyEvent, eventManager: IEventManager) {<br>        // Read the docs on what this does<br>        lightSharded(config.token, ...) {<br>            ...<br>        }<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><h4 class="">Spring support</h4><p class="paragraph">Spring users must set their gateway intents and cache flags using properties, named <code class="lang-kotlin">jda.intents</code> and <code class="lang-kotlin">jda.cacheFlags</code> respectively, also available in <code class="lang-kotlin">JDAConfiguration</code>.</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../BotCommands-core/io.github.freya022.botcommands.api.core/-j-d-a-service/create-j-d-a.html"><span>create</span><wbr><span><span>JDA</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span>Interfaced</span><wbr><span><span>Service</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@InterfacedService</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.freya022.botcommands.api.core.conditions/-required-intents/index.html"><span>Required</span><wbr><span><span>Intents</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@RequiredIntents</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="956640975%2FConstructors%2F1100755421" anchor-label="JDAService" id="956640975%2FConstructors%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-j-d-a-service.html"><span><span>JDAService</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="956640975%2FConstructors%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-570149052%2FClasslikes%2F1100755421" anchor-label="Companion" id="-570149052%2FClasslikes%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-570149052%2FClasslikes%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-784892680%2FProperties%2F1100755421" anchor-label="cacheFlags" id="-784892680%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cache-flags.html"><span>cache</span><wbr><span><span>Flags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-784892680%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="cache-flags.html">cacheFlags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/cache/CacheFlag.html">CacheFlag</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The cache flags used by your bot, the provided cache flags must all be present in <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html#getCacheFlags()">JDA.getCacheFlags</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1892890758%2FProperties%2F1100755421" anchor-label="intents" id="1892890758%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intents.html"><span><span>intents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1892890758%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="intents.html">intents</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/GatewayIntent.html">GatewayIntent</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The intents used by your bot, must be passed as the entire list of intents your bot will use, i.e., JDABuilder's <code class="lang-kotlin">create(Light/Default)</code> methods and similar for shard managers, do not use <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#enableIntents(kotlin.collections.MutableCollection)">JDABuilder.enableIntents</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-2089410909%2FFunctions%2F1100755421" anchor-label="create" id="-2089410909%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create.html"><span><span>create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2089410909%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#create(net.dv8tion.jda.api.requests.GatewayIntent,net.dv8tion.jda.api.requests.GatewayIntent...)">JDABuilder with caches inferred from intents</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1619557214%2FFunctions%2F1100755421" anchor-label="create" id="1619557214%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../create.html"><span><span>create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1619557214%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#create(net.dv8tion.jda.api.requests.GatewayIntent,net.dv8tion.jda.api.requests.GatewayIntent...)">JDABuilder with caches inferred from intents</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-379599860%2FFunctions%2F1100755421" anchor-label="createDefault" id="-379599860%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-default.html"><span>create</span><wbr><span><span>Default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-379599860%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create-default.html"><span class="token function">createDefault</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#createDefault(kotlin.String)">JDABuilder with recommended default settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1950613441%2FFunctions%2F1100755421" anchor-label="createDefaultSharded" id="-1950613441%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-default-sharded.html"><span>create</span><wbr><span>Default</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1950613441%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create-default-sharded.html"><span class="token function">createDefaultSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#createDefault(kotlin.String)">DefaultShardManagerBuilder with recommended default settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1260940255%2FFunctions%2F1100755421" anchor-label="createLight" id="-1260940255%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-light.html"><span>create</span><wbr><span><span>Light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260940255%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create-light.html"><span class="token function">createLight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#createLight(kotlin.String)">JDABuilder with low memory profile settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1236083062%2FFunctions%2F1100755421" anchor-label="createLightSharded" id="-1236083062%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-light-sharded.html"><span>create</span><wbr><span>Light</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1236083062%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create-light-sharded.html"><span class="token function">createLightSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#createLight(kotlin.String)">DefaultShardManagerBuilder with low memory profile settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-58860088%2FFunctions%2F1100755421" anchor-label="createSharded" id="-58860088%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-sharded.html"><span>create</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-58860088%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.annotation/CheckReturnValue///PointingToDeclaration/"><span class="token annotation builtin">CheckReturnValue</span></span></div></div><span class="token keyword">fun </span><a href="create-sharded.html"><span class="token function">createSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#create(net.dv8tion.jda.api.requests.GatewayIntent,net.dv8tion.jda.api.requests.GatewayIntent...)">DefaultShardManagerBuilder with caches inferred from intents</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1100492022%2FFunctions%2F1100755421" anchor-label="createSharded" id="1100492022%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../create-sharded.html"><span>create</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1100492022%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../create-sharded.html"><span class="token function">createSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">shardRange<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.ranges/-int-range/index.html">IntRange</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">shardsTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">login<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>activityProvider<span class="token operator">: </span><span class="token punctuation">(</span>shardId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/ShardManager.html">ShardManager</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#create(net.dv8tion.jda.api.requests.GatewayIntent,net.dv8tion.jda.api.requests.GatewayIntent...)">DefaultShardManagerBuilder with caches inferred from intents</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1200639111%2FFunctions%2F1100755421" anchor-label="default" id="1200639111%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../default.html"><span><span>default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1200639111%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../default.html"><span class="token function">default</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#createDefault(kotlin.String)">JDABuilder with recommended default settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-841813843%2FFunctions%2F1100755421" anchor-label="defaultSharded" id="-841813843%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../default-sharded.html"><span>default</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-841813843%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../default-sharded.html"><span class="token function">defaultSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">shardRange<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.ranges/-int-range/index.html">IntRange</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">shardsTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">login<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>activityProvider<span class="token operator">: </span><span class="token punctuation">(</span>shardId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/ShardManager.html">ShardManager</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#createDefault(kotlin.String)">DefaultShardManagerBuilder with recommended default settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="790581852%2FFunctions%2F1100755421" anchor-label="light" id="790581852%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../light.html"><span><span>light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="790581852%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../light.html"><span class="token function">light</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html">JDABuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDABuilder.html#createLight(kotlin.String)">JDABuilder with low memory profile settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1465131576%2FFunctions%2F1100755421" anchor-label="lightSharded" id="1465131576%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../light-sharded.html"><span>light</span><wbr><span><span>Sharded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1465131576%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="index.html">JDAService</a><span class="token punctuation">.</span><a href="../light-sharded.html"><span class="token function">lightSharded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">token<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">shardRange<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.ranges/-int-range/index.html">IntRange</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">shardsTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">login<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">memberCachePolicy<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/MemberCachePolicy.html">MemberCachePolicy</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chunkingFilter<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/ChunkingFilter.html">ChunkingFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>activityProvider<span class="token operator">: </span><span class="token punctuation">(</span>shardId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">restConfig<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestConfig.html">RestConfig</a><span class="token operator">?</span><span class="token operator"> = </span>getDefaultRestConfig()<span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html">DefaultShardManagerBuilder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/ShardManager.html">ShardManager</a></div><div class="brief "><p class="paragraph">Creates a <a href="https://docs.jda.wiki/net/dv8tion/jda/api/sharding/DefaultShardManagerBuilder.html#createLight(kotlin.String)">DefaultShardManagerBuilder with low memory profile settings</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

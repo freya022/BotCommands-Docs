@@ -1,0 +1,354 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>dev.freya02.botcommands.jda.ktx.requests</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-jda-ktx/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-jda-ktx/main" data-filter=":BotCommands-jda-ktx/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="BotCommands-jda-ktx::dev.freya02.botcommands.jda.ktx.requests////PointingToDeclaration//1205949177">
+  <div class="breadcrumbs"><a href="../index.html">BotCommands-jda-ktx</a><span class="delimiter">/</span><span class="current">dev.freya02.botcommands.jda.ktx.requests</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-1284682946%2FClasslikes%2F1205949177" anchor-label="RestResult" id="-1284682946%2FClasslikes%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-rest-result/index.html"><span>Rest</span><wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1284682946%2FClasslikes%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-inline/index.html"><span class="token annotation builtin">JvmInline</span></a></div></div><span class="token keyword">value </span><span class="token keyword">class </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="-rest-result/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Encapsulates a successful outcome or a failure.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="258638349%2FFunctions%2F1205949177" anchor-label="awaitCatching" id="258638349%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-catching.html"><span>await</span><wbr><span><span>Catching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="258638349%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="await-catching.html">R</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestAction.html">RestAction</a><span class="token operator">&lt;</span><a href="await-catching.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="await-catching.html"><span class="token function">awaitCatching</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="await-catching.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Awaits the completion of this RestAction and wraps it in a Result.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-990580697%2FFunctions%2F1205949177" anchor-label="awaitNull" id="-990580697%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-null.html"><span>await</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-990580697%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="await-null.html">R</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestAction.html">RestAction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="await-null.html"><span class="token function">awaitNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="await-null.html">R</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Awaits the completion of this RestAction and returns <code class="lang-kotlin">null</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1508111618%2FFunctions%2F1205949177" anchor-label="awaitOrNullOn" id="1508111618%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-or-null-on.html"><span>await</span><wbr><span>Or</span><wbr><span>Null</span><wbr><span><span>On</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1508111618%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="await-or-null-on.html">R</a><span class="token operator">&gt; </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestAction.html">RestAction</a><span class="token operator">&lt;</span><a href="await-or-null-on.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="await-or-null-on.html"><span class="token function">awaitOrNullOn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>errorResponses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="await-or-null-on.html">R</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Awaits the completion of this RestAction, returns <code class="lang-kotlin">null</code> if one of the provided error responses was thrown.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2088724234%2FFunctions%2F1205949177" anchor-label="awaitUnit" id="2088724234%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-unit.html"><span>await</span><wbr><span><span>Unit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2088724234%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestAction.html">RestAction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="await-unit.html"><span class="token function">awaitUnit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Awaits the completion of this RestAction.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1657456778%2FFunctions%2F1205949177" anchor-label="handle" id="-1657456778%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle.html"><span><span>handle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1657456778%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated exception and runs the given <a href="handle.html">block</a> if it matches the <a href="handle.html">predicate</a>.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>types<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated exception and runs the given <a href="handle.html">block</a> if it corresponds to an ignored exception type.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>responses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/exceptions/ErrorResponseException.html">ErrorResponseException</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="handle.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated exception and runs the given <a href="handle.html">block</a> if it corresponds to an ignored response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1226993154%2FFunctions%2F1205949177" anchor-label="ignore" id="1226993154%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ignore.html"><span><span>ignore</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226993154%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="ignore.html"><span class="token function">ignore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated exception if it corresponds to the <a href="ignore.html">predicate</a>.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="ignore.html"><span class="token function">ignore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>types<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated exception if it corresponds to an ignored exception.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="ignore.html"><span class="token function">ignore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>responses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="ignore.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Dismisses the encapsulated <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error response</a> if it corresponds to an ignored response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1083301445%2FFunctions%2F1205949177" anchor-label="onErrorResponse" id="-1083301445%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-error-response.html"><span>on</span><wbr><span>Error</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1083301445%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="on-error-response.html"><span class="token function">onErrorResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Runs the given <a href="on-error-response.html">block</a> if the result is an <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error response</a>.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="on-error-response.html"><span class="token function">onErrorResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">error<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/exceptions/ErrorResponseException.html">ErrorResponseException</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Runs the given <a href="on-error-response.html">block</a> if the result is the specified <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error response</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="683864798%2FFunctions%2F1205949177" anchor-label="onErrorResponseException" id="683864798%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-error-response-exception.html"><span>on</span><wbr><span>Error</span><wbr><span>Response</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="683864798%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="on-error-response-exception.html">T</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response-exception.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="on-error-response-exception.html"><span class="token function">onErrorResponseException</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/exceptions/ErrorResponseException.html">ErrorResponseException</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="on-error-response-exception.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Runs the given <a href="on-error-response-exception.html">block</a> if the result is an <a href="https://docs.jda.wiki/net/dv8tion/jda/api/exceptions/ErrorResponseException.html">ErrorResponseException</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="645414697%2FFunctions%2F1205949177" anchor-label="queueIgnoring" id="645414697%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="queue-ignoring.html"><span>queue</span><wbr><span><span>Ignoring</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="645414697%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/RestAction.html">RestAction</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="queue-ignoring.html"><span class="token function">queueIgnoring</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>errorResponses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Queues this REST action while ignoring the provided error responses.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-667523219%2FFunctions%2F1205949177" anchor-label="recover" id="-667523219%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recover.html"><span><span>recover</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-667523219%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator"> : </span><a href="recover.html">R</a><span class="token punctuation">, </span><a href="recover.html">R</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="recover.html"><span class="token function">recover</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="recover.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Maps the encapsulated exception using the given <a href="recover.html">block</a> if it corresponds to the <a href="recover.html">predicate</a>.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator"> : </span><a href="recover.html">R</a><span class="token punctuation">, </span><a href="recover.html">R</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="recover.html"><span class="token function">recover</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>types<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="recover.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Maps the encapsulated exception using the given <a href="recover.html">block</a> if it corresponds to an ignored exception type.</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator"> : </span><a href="recover.html">R</a><span class="token punctuation">, </span><a href="recover.html">R</a><span class="token operator">&gt; </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="recover.html"><span class="token function">recover</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>responses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/exceptions/ErrorResponseException.html">ErrorResponseException</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="recover.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="recover.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Maps the encapsulated exception using the given <a href="recover.html">block</a> if it corresponds to an ignored response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1224052976%2FFunctions%2F1205949177" anchor-label="runCatchingResponse" id="1224052976%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-catching-response.html"><span>run</span><wbr><span>Catching</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1224052976%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="run-catching-response.html">R</a><span class="token operator">&gt; </span><a href="run-catching-response.html"><span class="token function">runCatchingResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>ignoredResponses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="run-catching-response.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="run-catching-response.html">R</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Encapsulates the result of the specified function <a href="run-catching-response.html">block</a> and dismisses <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error responses</a> that corresponds to an ignored response, making the <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a> a success.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1724432821%2FFunctions%2F1205949177" anchor-label="runCatchingRest" id="1724432821%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-catching-rest.html"><span>run</span><wbr><span>Catching</span><wbr><span><span>Rest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1724432821%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="run-catching-rest.html">T</a><span class="token operator">&gt; </span><a href="run-catching-rest.html"><span class="token function">runCatchingRest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="run-catching-rest.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-rest-result/index.html">RestResult</a><span class="token operator">&lt;</span><a href="run-catching-rest.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Calls the specified function <a href="run-catching-rest.html">block</a> and returns its encapsulated result if invocation was successful, catching any <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a> exception that was thrown from the <a href="run-catching-rest.html">block</a> function execution and encapsulating it as a failure.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="427191141%2FFunctions%2F1205949177" anchor-label="runIgnoringResponse" id="427191141%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-ignoring-response.html"><span>run</span><wbr><span>Ignoring</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="427191141%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="run-ignoring-response.html"><span class="token function">runIgnoringResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>ignoredResponses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Runs the specified function <a href="run-ignoring-response.html">block</a> and dismisses <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error responses</a> that corresponds to an ignored response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="264831330%2FFunctions%2F1205949177" anchor-label="runIgnoringResponseOrNull" id="264831330%2FFunctions%2F1205949177" data-filterable-set=":BotCommands-jda-ktx/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-jda-ktx/main" data-filterable-set=":BotCommands-jda-ktx/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-ignoring-response-or-null.html"><span>run</span><wbr><span>Ignoring</span><wbr><span>Response</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="264831330%2FFunctions%2F1205949177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-jda-ktx/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="run-ignoring-response-or-null.html">R</a><span class="token operator">&gt; </span><a href="run-ignoring-response-or-null.html"><span class="token function">runIgnoringResponseOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignored<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>ignoredResponses<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">ErrorResponse</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="run-ignoring-response-or-null.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="run-ignoring-response-or-null.html">R</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Runs the specified function <a href="run-ignoring-response-or-null.html">block</a> and returns <code class="lang-kotlin">null</code> on <a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/ErrorResponse.html">error responses</a> that corresponds to an ignored response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

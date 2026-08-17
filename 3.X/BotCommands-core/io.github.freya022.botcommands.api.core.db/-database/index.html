@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Database</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    BotCommands
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">3.3.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":BotCommands-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":BotCommands-core/main" data-filter=":BotCommands-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    BotCommands
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="BotCommands-core::io.github.freya022.botcommands.api.core.db/Database///PointingToDeclaration//1100755421">
+  <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.core.db</a><span class="delimiter">/</span><span class="current">Database</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Database</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../io.github.freya022.botcommands.api.core.service.annotations/-interfaced-service/index.html"><span class="token annotation builtin">InterfacedService</span></a><span class="token punctuation">(</span><span>acceptMultiple<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="index.html">Database</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/kotlin/io/github/freya022/botcommands/api/core/db/Database.kt#L103">source</a>)</span></span></div><p class="paragraph">Utility class to use connections given by the <a href="../-connection-supplier/index.html">ConnectionSupplier</a>, in a suspending style.</p><p class="paragraph">Use <a href="../-blocking-database/index.html">BlockingDatabase</a> if you don't use Kotlin.</p><h3 class="">Nested transaction</h3><p class="paragraph">Nested transactions are transactions that use an existing connection, enabling you to, for example, have a <a href="../transactional.html">transactional</a> inside another.</p><p class="paragraph">They are supported on methods that use callbacks and work with coroutines.</p><h4 class="">Nested transaction block</h4><p class="paragraph">Queries executed in a nested transaction are not committed when exiting the block, only top-level transactions do.</p><h4 class="">Read-only status</h4><p class="paragraph">A nested transaction cannot be created if the existing connection is read-only and the nested transaction is read-write.</p><ul><li><p class="paragraph">✓ Read-write -&gt; Read-only</p></li><li><p class="paragraph">✓ Read-only -&gt; Read-only</p></li><li><p class="paragraph">✗ Read-only -&gt; Read-write</p></li></ul><p class="paragraph">Keep in mind that a read-only transaction will not prevent write operation, as they mostly <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html#setReadOnly(kotlin.Boolean)">enable optimizations</a>, and only a few databases reject modifying queries.</p><h3 class="">Tracing</h3><p class="paragraph">The connection could be wrapped depending on the configuration, for example, to log the queries (in which case a <a href="../../io.github.freya022.botcommands.api.core.db.query/-parametrized-query/index.html">ParametrizedQuery</a> is used), as well as timing them.</p><p class="paragraph">A SQL statement is traced if any of these conditions is met:</p><ul><li><p class="paragraph"><a href="../../io.github.freya022.botcommands.api.core.config/-b-database-config-props/log-queries.html">BDatabaseConfig.logQueries</a> is enabled, and the logger of the class that created the prepared statement has its <code class="lang-kotlin">TRACE</code> logs enabled,</p></li><li><p class="paragraph"><a href="../../io.github.freya022.botcommands.api.core.config/-b-database-config-props/query-log-threshold.html">BDatabaseConfig.queryLogThreshold</a> is configured</p></li></ul><p class="paragraph">The logged SQL statements will use the logger of the class that created the prepared statement. If a utility class creates statements, you should use <a href="../../io.github.freya022.botcommands.api.core.annotations/-ignore-stack-frame/index.html">@IgnoreStackFrame</a>, which will instead take the logger of the class that called your utility class. You can also use <a href="../with-logger.html">PreparedStatement.withLogger</a> if you wish to use a different logger.</p><h3 class="">Batching support</h3><p class="paragraph">If you must run a lot of DML statements (<code class="lang-kotlin">INSERT</code>, <code class="lang-kotlin">UPDATE</code>, ...), you can batch them as to execute all of them in one go, massively improving performances on larger updates.</p><p class="paragraph">For that, you can use any function giving you a <a href="../-suspending-prepared-statement/index.html">prepared statement</a>, then, you can add statements by:</p><ul><li><p class="paragraph">Adding the parameters using <a href="../-abstract-prepared-statement/set-parameters.html">SuspendingPreparedStatement.setParameters</a>,</p></li><li><p class="paragraph">Calling <a href="../../../BotCommands-core/io.github.freya022.botcommands.api.core.db/-abstract-prepared-statement/add-batch.html">SuspendingPreparedStatement.addBatch</a>.</p></li></ul><p class="paragraph">Repeat those two steps for all your statements, then call <a href="../../../BotCommands-core/io.github.freya022.botcommands.api.core.db/-suspending-prepared-statement/execute-batch.html">SuspendingPreparedStatement.executeBatch</a> to run all of them.</p><p class="paragraph"><strong>Note:</strong> To read returned columns (like an <code class="lang-kotlin">INSERT INTO ... RETURNING {column}</code> in PostgreSQL), you must specify the column indexes/names when creating your statement, and read them back from <a href="../-abstract-prepared-statement/get-generated-keys.html">SuspendingPreparedStatement.getGeneratedKeys</a>.</p><h4 class="tableheader">See also</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.freya022.botcommands.api.core.db.annotations/-requires-database/index.html"><span>Requires</span><wbr><span><span>Database</span></span></a></div></span></div><div><div class="title"><p class="paragraph">@RequiresDatabase</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-blocking-database/index.html"><span>Blocking</span><wbr><span><span>Database</span></span></a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../io.github.freya022.botcommands.api.core.db.query/-parametrized-query-factory/index.html"><span>Parametrized</span><wbr><span>Query</span><wbr><span><span>Factory</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="398986256%2FProperties%2F1100755421" anchor-label="connectionSupplier" id="398986256%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connection-supplier.html"><span>connection</span><wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="398986256%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="connection-supplier.html">connectionSupplier</a><span class="token operator">: </span><a href="../-connection-supplier/index.html">ConnectionSupplier</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1463546851%2FProperties%2F1100755421" anchor-label="databaseConfig" id="-1463546851%2FProperties%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="database-config.html"><span>database</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1463546851%2FProperties%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="database-config.html">databaseConfig</a><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.core.config/-b-database-config/index.html">BDatabaseConfig</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-438583283%2FFunctions%2F1100755421" anchor-label="fetchConnection" id="-438583283%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fetch-connection.html"><span>fetch</span><wbr><span><span>Connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-438583283%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="fetch-connection.html"><span class="token function">fetchConnection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html">Connection</a></div><div class="brief "><p class="paragraph">Acquires a database connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-83318616%2FFunctions%2F1100755421" anchor-label="preparedStatement" id="-83318616%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../prepared-statement.html"><span>prepared</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83318616%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="index.html">Database</a><span class="token punctuation">.</span><a href="../prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">columnNames<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../prepared-statement.html">R</a></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="index.html">Database</a><span class="token punctuation">.</span><a href="../prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">generatedKeys<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../prepared-statement.html">R</a></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../prepared-statement.html">R</a><span class="token operator">&gt; </span><a href="index.html">Database</a><span class="token punctuation">.</span><a href="../prepared-statement.html"><span class="token function">preparedStatement</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://javadoc.io/doc/org.jetbrains/annotations/26.0.2/org/intellij/lang/annotations/Language.html"><span class="token annotation builtin">Language</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"PostgreSQL"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>sql<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">columnIndexes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int-array/index.html">IntArray</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><a href="../-suspending-prepared-statement/index.html">SuspendingPreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../prepared-statement.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../prepared-statement.html">R</a></div><div class="brief "><p class="paragraph">Creates a statement from the given SQL statement, runs the <a href="../prepared-statement.html">block</a>, commits the changes and closes the connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1626041562%2FFunctions%2F1100755421" anchor-label="transactional" id="-1626041562%2FFunctions%2F1100755421" data-filterable-set=":BotCommands-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../transactional.html"><span><span>transactional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1626041562%2FFunctions%2F1100755421"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../transactional.html">R</a><span class="token operator">&gt; </span><a href="index.html">Database</a><span class="token punctuation">.</span><a href="../transactional.html"><span class="token function">transactional</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><span class="token keyword">suspend </span><a href="../-transaction/index.html">Transaction</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../transactional.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../transactional.html">R</a></div><div class="brief "><p class="paragraph">Acquires a database connection, runs the <a href="../transactional.html">block</a>, commits the changes and closes the connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
