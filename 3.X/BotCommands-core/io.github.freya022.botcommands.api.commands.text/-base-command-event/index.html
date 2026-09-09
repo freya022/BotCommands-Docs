@@ -38,7 +38,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">3.3.0
+        <div class="library-version" id="library-version">3.4.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -93,7 +93,7 @@
   <div class="breadcrumbs"><a href="../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../index.html">io.github.freya022.botcommands.api.commands.text</a><span class="delimiter">/</span><span class="current">BaseCommandEvent</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Base</span><wbr><span>Command</span><wbr><span><span>Event</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jspecify.annotations/NullMarked///PointingToDeclaration/"><span class="token annotation builtin">NullMarked</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">BaseCommandEvent</a> : <a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/message/MessageReceivedEvent.html">MessageReceivedEvent</a>, <a href="../../io.github.freya022.botcommands.api.commands.ratelimit/-cancellable-rate-limit/index.html">CancellableRateLimit</a>, <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/index.html">LocalizableTextCommand</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/java/io/github/freya022/botcommands/api/commands/text/BaseCommandEvent.java#L47">source</a>)</span></span></div><p class="paragraph">Event for regex-based text commands. </p><h3 class="">Localization</h3> You can send localized replies using the user, guild and also any <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a>, by using this event directly, see <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/index.html">LocalizableTextCommand</a> for more details and configuration. <p class="paragraph"> An alternative to using this event is injecting an <a href="../../io.github.freya022.botcommands.api.localization.context/-text-localization-context/index.html">TextLocalizationContext</a> in a parameter, or retrieving one using <a href="index.html#1786102317%2FFunctions%2F1100755421">getLocalizationContext</a>. </p><p class="paragraph"> In both cases, you can configure the locale, using <a href="../../io.github.freya022.botcommands.api.localization.text/-text-command-locale-provider/index.html">TextCommandLocaleProvider</a>. </p><h3 class="">Rate limit cancellation</h3> Although it is recommended to reject commands using <a href="../-text-command-filter/index.html">TextCommandFilter</a>, you can also return the bucket token with <a href="../../io.github.freya022.botcommands.api.commands.ratelimit/-cancellable-rate-limit/cancel-rate-limit.html">cancelRateLimit</a> if you want to avoid consuming bandwidth in certain conditions.</div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jspecify.annotations/NullMarked///PointingToDeclaration/"><span class="token annotation builtin">NullMarked</span></span></div></div><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">BaseCommandEvent</a> : <a href="https://docs.jda.wiki/net/dv8tion/jda/api/events/message/MessageReceivedEvent.html">MessageReceivedEvent</a>, <a href="../../io.github.freya022.botcommands.api.commands.ratelimit/-cancellable-rate-limit/index.html">CancellableRateLimit</a>, <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/index.html">LocalizableTextCommand</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/freya022/BotCommands/tree/3.X/BotCommands-core/src/main/java/io/github/freya022/botcommands/api/commands/text/BaseCommandEvent.java#L47">source</a>)</span></span></div><p class="paragraph">Event for regex-based text commands. </p><h3 class="">Localization</h3> You can send localized replies using the user, guild and also any <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a>, by using this event directly, see <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/index.html">LocalizableTextCommand</a> for more details and configuration. <p class="paragraph"> An alternative to using this event is injecting an <a href="../../io.github.freya022.botcommands.api.localization.context/-text-localization-context/index.html">TextLocalizationContext</a> in a parameter, or retrieving one using <a href="../-command-event/index.html#1786102317%2FFunctions%2F1100755421">getLocalizationContext</a>. </p><p class="paragraph"> In both cases, you can configure the locale, using <a href="../../io.github.freya022.botcommands.api.localization.text/-text-command-locale-provider/index.html">TextCommandLocaleProvider</a>. </p><h3 class="">Rate limit cancellation</h3> Although it is recommended to reject commands using <a href="../-text-command-filter/index.html">TextCommandFilter</a>, you can also return the bucket token with <a href="../../io.github.freya022.botcommands.api.commands.ratelimit/-cancellable-rate-limit/cancel-rate-limit.html">cancelRateLimit</a> if you want to avoid consuming bandwidth in certain conditions.</div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
@@ -138,13 +138,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#434589558%2FProperties%2F1100755421"><span><span>message</span></span></a></div>
+                  <div><a href="../-command-event/index.html#434589558%2FProperties%2F1100755421"><span><span>message</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="434589558%2FProperties%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#434589558%2FProperties%2F1100755421">message</a><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Message.html">Message</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-command-event/index.html#434589558%2FProperties%2F1100755421">message</a><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Message.html">Message</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -217,13 +217,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-23973828%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Author</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-23973828%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Author</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-23973828%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-23973828%2FFunctions%2F1100755421"><span class="token function">getAuthor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/User.html">User</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-23973828%2FFunctions%2F1100755421"><span class="token function">getAuthor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/User.html">User</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -262,13 +262,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#999172462%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Channel</span></span></a></div>
+                  <div><a href="../-command-event/index.html#999172462%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Channel</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="999172462%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#999172462%2FFunctions%2F1100755421"><span class="token function">getChannel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/unions/MessageChannelUnion.html">MessageChannelUnion</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#999172462%2FFunctions%2F1100755421"><span class="token function">getChannel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/unions/MessageChannelUnion.html">MessageChannelUnion</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -277,13 +277,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-71663916%2FFunctions%2F1100755421"><span>get</span><wbr><span>Channel</span><wbr><span><span>Type</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-71663916%2FFunctions%2F1100755421"><span>get</span><wbr><span>Channel</span><wbr><span><span>Type</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-71663916%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-71663916%2FFunctions%2F1100755421"><span class="token function">getChannelType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelType</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-71663916%2FFunctions%2F1100755421"><span class="token function">getChannelType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelType</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -337,13 +337,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1147576962%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Guild</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1147576962%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>Guild</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1147576962%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1147576962%2FFunctions%2F1100755421"><span class="token function">getGuild</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Guild.html">Guild</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1147576962%2FFunctions%2F1100755421"><span class="token function">getGuild</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/Guild.html">Guild</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -352,13 +352,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-896155815%2FFunctions%2F1100755421"><span>get</span><wbr><span>Guild</span><wbr><span><span>Channel</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-896155815%2FFunctions%2F1100755421"><span>get</span><wbr><span>Guild</span><wbr><span><span>Channel</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-896155815%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-896155815%2FFunctions%2F1100755421"><span class="token function">getGuildChannel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/unions/GuildMessageChannelUnion.html">GuildMessageChannelUnion</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-896155815%2FFunctions%2F1100755421"><span class="token function">getGuildChannel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/unions/GuildMessageChannelUnion.html">GuildMessageChannelUnion</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -367,13 +367,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#846037169%2FFunctions%2F1100755421"><span>get</span><wbr><span>Guild</span><wbr><span><span>Message</span></span></a></div>
+                  <div><a href="../-command-event/index.html#846037169%2FFunctions%2F1100755421"><span>get</span><wbr><span>Guild</span><wbr><span><span>Message</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846037169%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#846037169%2FFunctions%2F1100755421"><span class="token function">getGuildMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">Returns the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/get-guild-message.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#846037169%2FFunctions%2F1100755421"><span class="token function">getGuildMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">Returns the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/get-guild-message.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -397,13 +397,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1640939457%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>JDA</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1640939457%2FFunctions%2F1100755421"><span>get</span><wbr><span><span>JDA</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1640939457%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1640939457%2FFunctions%2F1100755421"><span class="token function">getJDA</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1640939457%2FFunctions%2F1100755421"><span class="token function">getJDA</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/JDA.html">JDA</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -412,13 +412,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1004664368%2FFunctions%2F1100755421"><span>get</span><wbr><span>Jump</span><wbr><span><span>Url</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1004664368%2FFunctions%2F1100755421"><span>get</span><wbr><span>Jump</span><wbr><span><span>Url</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1004664368%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1004664368%2FFunctions%2F1100755421"><span class="token function">getJumpUrl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1004664368%2FFunctions%2F1100755421"><span class="token function">getJumpUrl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -427,13 +427,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1812861398%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Bundle</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1812861398%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Bundle</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1812861398%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1812861398%2FFunctions%2F1100755421"><span class="token function">getLocalizationBundle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">If set, forces the specified localization bundle to be used.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1812861398%2FFunctions%2F1100755421"><span class="token function">getLocalizationBundle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">If set, forces the specified localization bundle to be used.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -442,13 +442,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1861907532%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Context</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1861907532%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Context</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2064097683%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1861907532%2FFunctions%2F1100755421"><span class="token function">getLocalizationContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bundleName<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pathPrefix<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization.context/-localization-context/index.html">LocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a localization context for the provided bundle name and path prefix.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1786102317%2FFunctions%2F1100755421"><span class="token function">getLocalizationContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bundleName<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pathPrefix<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization.context/-text-localization-context/index.html">TextLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a localization context for the provided bundle name and path prefix, using the locale from <a href="../../io.github.freya022.botcommands.api.localization.text/-text-command-locale-provider/index.html">TextCommandLocaleProvider</a>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1861907532%2FFunctions%2F1100755421"><span class="token function">getLocalizationContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bundleName<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pathPrefix<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization.context/-localization-context/index.html">LocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a localization context for the provided bundle name and path prefix.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1786102317%2FFunctions%2F1100755421"><span class="token function">getLocalizationContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bundleName<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pathPrefix<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../io.github.freya022.botcommands.api.localization.context/-text-localization-context/index.html">TextLocalizationContext</a></div><div class="brief "><p class="paragraph">Returns a localization context for the provided bundle name and path prefix, using the locale from <a href="../../io.github.freya022.botcommands.api.localization.text/-text-command-locale-provider/index.html">TextCommandLocaleProvider</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -457,13 +457,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1942225350%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Prefix</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1942225350%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localization</span><wbr><span><span>Prefix</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1942225350%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1942225350%2FFunctions%2F1100755421"><span class="token function">getLocalizationPrefix</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">If set, adds the specified prefix to the path of every localization call, useful to avoid using very long strings in every reply/edit.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1942225350%2FFunctions%2F1100755421"><span class="token function">getLocalizationPrefix</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">If set, adds the specified prefix to the path of every localization call, useful to avoid using very long strings in every reply/edit.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -472,13 +472,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1960864953%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localized</span><wbr><span><span>Message</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1960864953%2FFunctions%2F1100755421"><span>get</span><wbr><span>Localized</span><wbr><span><span>Message</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1960864953%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#-1960864953%2FFunctions%2F1100755421"><span class="token function">getLocalizedMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">Returns the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization/-localizable-action/get-localized-message.html">path</a>, using the provided locale and parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1960864953%2FFunctions%2F1100755421"><span class="token function">getLocalizedMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief "><p class="paragraph">Returns the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization/-localizable-action/get-localized-message.html">path</a>, using the provided locale and parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -517,13 +517,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1389394639%2FFunctions%2F1100755421"><span>get</span><wbr><span>Message</span><wbr><span><span>Id</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1389394639%2FFunctions%2F1100755421"><span>get</span><wbr><span>Message</span><wbr><span><span>Id</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1389394639%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1389394639%2FFunctions%2F1100755421"><span class="token function">getMessageId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1389394639%2FFunctions%2F1100755421"><span class="token function">getMessageId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -532,13 +532,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-81113421%2FFunctions%2F1100755421"><span>get</span><wbr><span>Message</span><wbr><span>Id</span><wbr><span><span>Long</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-81113421%2FFunctions%2F1100755421"><span>get</span><wbr><span>Message</span><wbr><span>Id</span><wbr><span><span>Long</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-81113421%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-81113421%2FFunctions%2F1100755421"><span class="token function">getMessageIdLong</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-81113421%2FFunctions%2F1100755421"><span class="token function">getMessageIdLong</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -547,13 +547,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1041853674%2FFunctions%2F1100755421"><span>get</span><wbr><span>Raw</span><wbr><span><span>Data</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1041853674%2FFunctions%2F1100755421"><span>get</span><wbr><span>Raw</span><wbr><span><span>Data</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1041853674%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1041853674%2FFunctions%2F1100755421"><span class="token function">getRawData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/data/DataObject.html">DataObject</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1041853674%2FFunctions%2F1100755421"><span class="token function">getRawData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/utils/data/DataObject.html">DataObject</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -562,13 +562,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1481456984%2FFunctions%2F1100755421"><span>get</span><wbr><span>Response</span><wbr><span><span>Number</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1481456984%2FFunctions%2F1100755421"><span>get</span><wbr><span>Response</span><wbr><span><span>Number</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1481456984%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1481456984%2FFunctions%2F1100755421"><span class="token function">getResponseNumber</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1481456984%2FFunctions%2F1100755421"><span class="token function">getResponseNumber</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -607,13 +607,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1653220832%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Guild</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1653220832%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Guild</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653220832%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1653220832%2FFunctions%2F1100755421"><span class="token function">isFromGuild</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1653220832%2FFunctions%2F1100755421"><span class="token function">isFromGuild</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -622,13 +622,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1944663875%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Thread</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1944663875%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Thread</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1944663875%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1944663875%2FFunctions%2F1100755421"><span class="token function">isFromThread</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1944663875%2FFunctions%2F1100755421"><span class="token function">isFromThread</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -637,13 +637,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1592794024%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Type</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1592794024%2FFunctions%2F1100755421"><span>is</span><wbr><span>From</span><wbr><span><span>Type</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592794024%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1592794024%2FFunctions%2F1100755421"><span class="token function">isFromType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1592794024%2FFunctions%2F1100755421"><span class="token function">isFromType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/entities/channel/ChannelType.html">ChannelType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -652,13 +652,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1562261064%2FFunctions%2F1100755421"><span>is</span><wbr><span>Rate</span><wbr><span>Limit</span><wbr><span><span>Cancelled</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1562261064%2FFunctions%2F1100755421"><span>is</span><wbr><span>Rate</span><wbr><span>Limit</span><wbr><span><span>Cancelled</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1562261064%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1562261064%2FFunctions%2F1100755421"><span class="token function">isRateLimitCancelled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1562261064%2FFunctions%2F1100755421"><span class="token function">isRateLimitCancelled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -667,13 +667,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-411275837%2FFunctions%2F1100755421"><span>is</span><wbr><span>Webhook</span><wbr><span><span>Message</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-411275837%2FFunctions%2F1100755421"><span>is</span><wbr><span>Webhook</span><wbr><span><span>Message</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-411275837%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-411275837%2FFunctions%2F1100755421"><span class="token function">isWebhookMessage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-411275837%2FFunctions%2F1100755421"><span class="token function">isWebhookMessage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -757,13 +757,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1323463492%2FFunctions%2F1100755421"><span>reply</span><wbr><span><span>Guild</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-1323463492%2FFunctions%2F1100755421"><span>reply</span><wbr><span><span>Guild</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1323463492%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#-1323463492%2FFunctions%2F1100755421"><span class="token function">replyGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Replies with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/reply-guild.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-1323463492%2FFunctions%2F1100755421"><span class="token function">replyGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Replies with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/reply-guild.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -787,13 +787,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#671567403%2FFunctions%2F1100755421"><span>reply</span><wbr><span><span>Localized</span></span></a></div>
+                  <div><a href="../-command-event/index.html#671567403%2FFunctions%2F1100755421"><span>reply</span><wbr><span><span>Localized</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="671567403%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#671567403%2FFunctions%2F1100755421"><span class="token function">replyLocalized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Replies with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/reply-localized.html">path</a>, using the provided locale and parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#671567403%2FFunctions%2F1100755421"><span class="token function">replyLocalized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Replies with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/reply-localized.html">path</a>, using the provided locale and parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -877,13 +877,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#472359335%2FFunctions%2F1100755421"><span>respond</span><wbr><span><span>Guild</span></span></a></div>
+                  <div><a href="../-command-event/index.html#472359335%2FFunctions%2F1100755421"><span>respond</span><wbr><span><span>Guild</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="472359335%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#472359335%2FFunctions%2F1100755421"><span class="token function">respondGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Responds with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/respond-guild.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#472359335%2FFunctions%2F1100755421"><span class="token function">respondGuild</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Responds with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/respond-guild.html">path</a>, using the guild's locale and provided parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -907,13 +907,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-694941152%2FFunctions%2F1100755421"><span>respond</span><wbr><span><span>Localized</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-694941152%2FFunctions%2F1100755421"><span>respond</span><wbr><span><span>Localized</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-694941152%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#-694941152%2FFunctions%2F1100755421"><span class="token function">respondLocalized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Responds with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/respond-localized.html">path</a>, using the provided locale and parameters.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-694941152%2FFunctions%2F1100755421"><span class="token function">respondLocalized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locale<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token punctuation">, </span></span><span class="parameter ">localizationPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../io.github.freya022.botcommands.api.localization/-localization/-entry/index.html">Localization.Entry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.jda.wiki/net/dv8tion/jda/api/requests/restaction/MessageCreateAction.html">MessageCreateAction</a></div><div class="brief "><p class="paragraph">Responds with the localized message at the following <a href="../../io.github.freya022.botcommands.api.localization.text/-localizable-text-command/respond-localized.html">path</a>, using the provided locale and parameters.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -952,13 +952,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#1176734533%2FFunctions%2F1100755421"><span>set</span><wbr><span>Localization</span><wbr><span><span>Bundle</span></span></a></div>
+                  <div><a href="../-command-event/index.html#1176734533%2FFunctions%2F1100755421"><span>set</span><wbr><span>Localization</span><wbr><span><span>Bundle</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1176734533%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#1176734533%2FFunctions%2F1100755421"><span class="token function">setLocalizationBundle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">&lt;set-?&gt;<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">If set, forces the specified localization bundle to be used.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#1176734533%2FFunctions%2F1100755421"><span class="token function">setLocalizationBundle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">&lt;set-?&gt;<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">If set, forces the specified localization bundle to be used.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -967,13 +967,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#2036046645%2FFunctions%2F1100755421"><span>set</span><wbr><span>Localization</span><wbr><span><span>Prefix</span></span></a></div>
+                  <div><a href="../-command-event/index.html#2036046645%2FFunctions%2F1100755421"><span>set</span><wbr><span>Localization</span><wbr><span><span>Prefix</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2036046645%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="index.html#2036046645%2FFunctions%2F1100755421"><span class="token function">setLocalizationPrefix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">&lt;set-?&gt;<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">If set, adds the specified prefix to the path of every localization call, useful to avoid using very long strings in every reply/edit.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-command-event/index.html#2036046645%2FFunctions%2F1100755421"><span class="token function">setLocalizationPrefix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">&lt;set-?&gt;<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">If set, adds the specified prefix to the path of every localization call, useful to avoid using very long strings in every reply/edit.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -982,13 +982,13 @@
           <div class="table-row table-row_content" data-filterable-current=":BotCommands-core/main" data-filterable-set=":BotCommands-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-857011290%2FFunctions%2F1100755421"><span>to</span><wbr><span><span>String</span></span></a></div>
+                  <div><a href="../-command-event/index.html#-857011290%2FFunctions%2F1100755421"><span>to</span><wbr><span><span>String</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-857011290%2FFunctions%2F1100755421"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-857011290%2FFunctions%2F1100755421"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-command-event/index.html#-857011290%2FFunctions%2F1100755421"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
