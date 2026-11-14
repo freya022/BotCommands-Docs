@@ -38,7 +38,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">3.4.0
+        <div class="library-version" id="library-version">3.5.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -93,7 +93,7 @@
   <div class="breadcrumbs"><a href="../../../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../../../index.html">io.github.freya022.botcommands.api.core.annotations</a><span class="delimiter">/</span><a href="../../index.html">BEventListener</a><span class="delimiter">/</span><a href="../index.html">RunMode</a><span class="delimiter">/</span><span class="current">ASYNC</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>ASYNC</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><a href="index.html">ASYNC</a></div></div><p class="paragraph">Runs this listener in a coroutine from the <a href="../../../../io.github.freya022.botcommands.api.core.config/-b-coroutine-scopes-config-props/event-dispatcher-scope.html">event dispatcher scope</a>, without blocking the event thread.</p><p class="paragraph">Each event listener will be launched based on their <a href="../../../../../BotCommands-core/io.github.freya022.botcommands.api.core.annotations/-b-event-listener/--root--.html">priority</a>, and each will have its own coroutine. Remember this does not mean all listeners will run in parallel, as you are limited by how many threads can be used by the scope's dispatcher, or until one of the listeners suspends to let another run.</p><p class="paragraph"><a href="../-b-l-o-c-k-i-n-g/index.html">BLOCKING</a> requests always runs before these.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><a href="index.html">ASYNC</a></div></div><p class="paragraph">Runs this listener in a coroutine from the <a href="../../../../io.github.freya022.botcommands.api.core.config/-b-coroutine-scopes-config-props/event-dispatcher-scope.html">event dispatcher scope</a>, without blocking the event thread.</p><p class="paragraph">Each event listener will be launched based on their <a href="../../priority.html">priority</a>, and each will have its own coroutine. Remember this does not mean all listeners will run in parallel, as you are limited by how many threads can be used by the scope's dispatcher, or until one of the listeners suspends to let another run.</p><p class="paragraph"><a href="../-b-l-o-c-k-i-n-g/index.html">BLOCKING</a> requests always runs before these.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>

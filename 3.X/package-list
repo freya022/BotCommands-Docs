@@ -120,6 +120,7 @@ io.github.freya022.botcommands.api.utils
 module:BotCommands-jda-ktx
 dev.freya02.botcommands.jda.ktx
 dev.freya02.botcommands.jda.ktx.components
+dev.freya02.botcommands.jda.ktx.components.exceptions
 dev.freya02.botcommands.jda.ktx.components.utils
 dev.freya02.botcommands.jda.ktx.coroutines
 dev.freya02.botcommands.jda.ktx.durations

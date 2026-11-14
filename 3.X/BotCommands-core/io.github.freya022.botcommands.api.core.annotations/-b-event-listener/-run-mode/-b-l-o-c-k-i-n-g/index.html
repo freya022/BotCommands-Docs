@@ -38,7 +38,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">3.4.0
+        <div class="library-version" id="library-version">3.5.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -93,7 +93,7 @@
   <div class="breadcrumbs"><a href="../../../../index.html">BotCommands-core</a><span class="delimiter">/</span><a href="../../../index.html">io.github.freya022.botcommands.api.core.annotations</a><span class="delimiter">/</span><a href="../../index.html">BEventListener</a><span class="delimiter">/</span><a href="../index.html">RunMode</a><span class="delimiter">/</span><span class="current">BLOCKING</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>BLOCKING</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><a href="index.html">BLOCKING</a></div></div><p class="paragraph">Runs this listener on the same thread as they were fired in, based on the <a href="../../../../../BotCommands-core/io.github.freya022.botcommands.api.core.annotations/-b-event-listener/--root--.html">priority</a>.</p><p class="paragraph">For JDA events, this will most likely run on JDA's websocket read thread, blocking it for too long will make the bot unresponsive.</p><p class="paragraph">These always run first, and should be used <strong>only when necessary</strong>.</p><p class="paragraph">Note that this is ignored if the event was dispatched using <a href="../../../../io.github.freya022.botcommands.api.core.hooks/-event-dispatcher/dispatch-event-async.html">EventDispatcher.dispatchEventAsync</a>, instead running all event listeners as <a href="../-a-s-y-n-c/index.html">ASYNC</a>.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":BotCommands-core/main"><div class="symbol monospace"><div class="block"><a href="index.html">BLOCKING</a></div></div><p class="paragraph">Runs this listener on the same thread as they were fired in, based on the <a href="../../priority.html">priority</a>.</p><p class="paragraph">For JDA events, this will most likely run on JDA's websocket read thread, blocking it for too long will make the bot unresponsive.</p><p class="paragraph">These always run first, and should be used <strong>only when necessary</strong>.</p><p class="paragraph">Note that this is ignored if the event was dispatched using <a href="../../../../io.github.freya022.botcommands.api.core.hooks/-event-dispatcher/dispatch-event-async.html">EventDispatcher.dispatchEventAsync</a>, instead running all event listeners as <a href="../-a-s-y-n-c/index.html">ASYNC</a>.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
